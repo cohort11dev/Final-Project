@@ -1,0 +1,343 @@
+/* Color Scheme
+#1D3240 - navy-ish
+#025E73 - dark teal
+#F2DFCE - off white
+#D98859 - burnt orange
+#8C4B45 - burnt red
+*/
+
+/* General Styles */
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 85%;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Fira Sans', sans-serif;
+    outline: none;
+}
+
+/* Header Styles */
+header {
+    background: #8C4B45;
+    padding: 10px;
+}
+
+/* Nav Styles */
+#name {
+    font-size: 1.75rem;
+}
+nav {
+    color: #FAF3ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-menu {
+    display: flex;
+    flex-direction: row;
+}
+.menu-item {
+    margin: 0 10px;
+}
+.menu-link {
+    color: #FAF3ED;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* Home Styles */
+#homeImage {
+    background: center/cover no-repeat url(../images/restaurant_banner.jpg);
+    min-height: 90vh;
+    opacity: 0.9;
+}
+
+/* Back to Top */
+#backToTop i {
+    color: #1D3240;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* Food/Drink Menu Styles */
+#food, #drinks {
+    background: #FAF3ED;
+    color: #1D3240;
+}
+#food .wrapper, #drinks .wrapper {
+    max-width: 750px;
+}
+#drinks {
+    padding: 100px 0;
+}
+h2 {
+    font-family: 'Literata', serif;
+    font-size: 2.25rem;
+    padding: 5% 0;
+    text-align: center;
+    text-decoration: underline;
+}
+h3 {
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+.hidden {
+    display: none;
+}
+.food-info, .drink-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.food-list li, .drinks-list li {
+    padding: 5px 0;
+}
+.food-list li {
+    transition: all 0.4s ease-out;
+}
+.food-list li:hover {
+    background: #f6e9de;
+    padding: 10px;
+}
+.more-info-btn {
+    background: #1D3240;
+    color: #FAF3ED;
+    padding: 0.5em 1em;
+}
+.food-price {
+    text-align: right;
+}
+#seeDrinksBtn {
+    background: #1D3240;
+    color: #FAF3ED;
+    display: block;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+/* More Info Modal Styles*/
+.infoModal {
+    background: #1D3240;
+    border-radius: 5px;
+    color: #FAF3ED;
+    display: none;
+    height: 3em;
+    padding: 5px 15px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 999;
+}
+.food-desc {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Age Modal Styles*/
+#ageModal {
+    background: #1D3240;
+    height: 50%;
+    width: 50%;
+    overflow: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+#ageForm {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input#age {
+    background: #FAF3ED;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#ageSubmit {
+    background: #D98859;
+    border-radius: 5px;
+    color: #1D3240;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1em 2em;
+}
+#ageSubmit:hover {
+    background: #D57D49;
+}
+#ageSubmit:active {
+    transform: scale(0.95);
+}
+
+/* Music Styles */
+#music {
+    background: #FEFDFC;
+    color: #1D3240;
+}
+#artists-container {
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.artist-card {
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.artist-img {
+    height: auto;
+    margin-bottom: 5px;
+    width: 90%;
+}
+.artist-name {
+    font-size: 1.5rem;
+}
+
+/* About Styles */
+#about {
+    background: #D98859;
+    padding: 3em 0;
+}
+#about .wrapper {
+    display: flex;
+    align-items: center;
+}
+#about-image {
+    height: auto;
+    max-width: 50%;
+}
+#about-text {
+    line-height: 1.5rem;
+    margin-left: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background: #111f25;
+    color: #FAF3ED;
+    padding: 15px;
+}
+footer .wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+h5 {
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+}
+#contact p, #hours p {
+    margin-bottom: 4px;
+}
+i {
+    color: #FAF3ED;
+    margin-left: 15px;
+}
+#socialMedia {
+    align-self: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 640px) {
+    /* Nav Styles */
+    #navToggle {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    nav {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    #main-menu {
+        display: block;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+    }
+    #main-menu.vertical{
+        height: auto;
+        opacity: 1;
+        transition: opacity 0.5s ease-in;
+    }
+    /* Back to Top Styles */
+    #backToTop i {
+        display: none;
+    }
+
+    /* Food/Drink Menu Styles */
+    .infoModal {
+        padding: 5px;
+        width: 80%;
+    }
+    #ageModal {
+        height: 25%;
+        width: 75%;
+    }
+    input#age {
+        font-size: 1rem;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+    #ageSubmit {
+        background: #D98859;
+        color: #1D3240;
+        padding: 0.5em 1em;
+    }
+
+    /* Footer Styles */
+    footer .wrapper {
+        flex-direction: column;
+        padding: 5px;
+    }
+    footer .wrapper div {
+        margin: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Artist Styles */
+    #artists-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .artist-card {
+        padding-bottom: 20px;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1092px) {
+    /* About Styles */
+    #about .wrapper {
+        flex-direction: column;
+    }
+    #about-image {
+        max-width: 100%;
+    }
+    #about-text {
+        margin: 15px 0 0;
+    }
+}
