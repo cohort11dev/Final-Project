@@ -1,61 +1,37 @@
-const qs = selector => document.querySelector(selector);
-const qsa = selector => document.querySelectorAll(selector);
+import { jObject } from './descriptions.js'
 
-const siteObj = {
-    demo_1: "./portfolio/fgelly/index.html",
-    demo_2: "./portfolio/cgriffith/index.html",
-    demo_3: "./portfolio/tromano/index.html",
-    demo_4: "./portfolio/smcnatt/index.html",
-    demo_5: "./portfolio/cwalls/index.html",
-    demo_6: "./portfolio/dchhan/index.html",
-}
+(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})();
 
-function modalContent(selector) {
-    document.querySelector(`#xl-modal`).innerHTML = `
-    <iframe class="c-frame h-100" src="${siteObj[selector]}">
-        <p>Your browser doesn't seem to support iframes.</p>
-        <p>You can still view the raw code below.</p>
-    </iframe>
-    `;
-}
+document.querySelectorAll('[data-type^="job"]').forEach(cur => {
+    cur.addEventListener('click', event => {
+        // clear the innerHTML before loading the new content
+        [ document.querySelector('#jobDescTitle'),
+          document.querySelector('#job-desc'),
+          document.querySelector('#job-res'),
+          document.querySelector('#job-res-list'),
+          document.querySelector('#job-reqs'),
+          document.querySelector('#job-reqs-list') ].forEach(cur => cur.innerHTML = '');
 
-qsa('.demo-img')
-    .forEach(cur => cur.addEventListener('click', event => {
-            console.log(event.target.id);
-            modalContent(event.target.id);
-        })
-    );
+        const job = event.target.dataset.type;
+        document.querySelector('#jobDescTitle').innerHTML = jObject[job][0];
 
-qsa('.trigger-modal')
-    .forEach(cur => cur.addEventListener('click', event => {
-        event.preventDefault();
-        console.log(event.target.hash);
-        modalContent(event.target.hash.replace(/#/, ''));
-    }))
+        document.querySelector('#job-desc').innerHTML = jObject[job][1];
 
+        document.querySelector('#job-res').innerHTML = jObject[job][2];
 
-
-
-const smoothScroll = e => {
-    e.preventDefault();
-    let targetId = window.getAttribute("href");
-    let targetSection = document.querySelector(targetId);
-    if (!targetSection) return;
-
-    let toTop = distanceToTop(targetSection);
-    window.scrollBy({
-        top: toTop,
-        left: 0,
-        behavior: "smooth"
-    });
-
-    let checkIfDone = setInterval(function () {
-        let reachedBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight;
-        if (distanceToTop(targetSection) === 0 || reachedBottom) {
-            targetSection.tabIndex = "-1";
-            targetSection.focus();
-            window.history.pushState("", "", targetId);
-            clearInterval(checkIfDone);
+        let list = ['<li class="list-group-item">', '</li>']
+        for(let el of jObject[job][3]) {
+            el = list[0] + el + list[1];
+            document.querySelector('#job-res-list').innerHTML += el;
         }
-    }, 100);
-}
+
+        document.querySelector('#job-reqs').innerHTML = jObject[job][4];
+        for(let el of jObject[job][5]) {
+            el = list[0] + el + list[1];
+            document.querySelector('#job-reqs-list').innerHTML += el;
+        }
+    });
+})
+
