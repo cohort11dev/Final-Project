@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+<!-- iframe demo site modal -->
+    <div class="modal fade bd-example-modal-xl"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myExtraLargeModalLabel"
+        aria-hidden="true"
+        style="position:relative"
+    >
+        <div class="close-mxl">
+            <i class="fas fa-times-circle fa-2x"></i>
+        </div>
+        
+        <div class="modal-dialog modal-xl" role="document">
+            
+            <div id="xl-modal" class="modal-content m-box">
+                %REPLACE%
+            </div>
+        </div>
+    </div>
+    <header id="go_to_top">
+        <div class="collapse c-nav-bg" id="navbarHeader">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">
+                            This is some fun text nested in the top bar. Not exactly sure what to put in here but it
+                            could be something nice.
+                        </p>
+
+                    </div>
+
+                    <div class="col-sm-4 offset-md-1 py-4">
+
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-twitter mr-1"></i> Follow us on Twitter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fab fa-facebook-square mr-1"></i> Like us on Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white">
+                                    <i class="fas fa-envelope mr-1"></i> Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navbar navbar-dark c-nav-bg box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <i class="fas fa-code mr-2"></i>
+                    <strong>Portfolio</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+
+            <div class="container">
+                <h1 class="jumbotron-heading">
+                    Portfolio
+                </h1>
+                <p class="lead text-muted">
+                    Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it
+                    entirely.
+                </p>
+            </div>
+
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row ">
+
+                    <!-- DEMO 1 -->
+                    <div class="col-md-4">
+
+                        <div class="card mb-4 box-shadow">
+
+                            <img
+                                id="demo_1"
+                                class="card-img-top demo-img"
+                                src="./portfolio/fgelly/demo.jpg"
+                                alt="Felix Gelly's demo site image"
+                                data-toggle="modal"
+                                data-target=".bd-example-modal-xl"
+                            />
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    The Lunch Box
+                                </h5>
+                                <p class="card-text">
+                                    A short restaurant demo showcasing dynamically created JavaScript Elements.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer">
+
+                                <div class="text-muted mb-1">
+                                    Coded by: <strong>Felix Gelly</strong>
+                                </div>
+
+                                <small class="text-muted port-foot">
+
+                                    <div class="demo-modal">
+                                        <a
+                                        class="trigger-modal"
+                                        href="#demo_1"
+                                        data-toggle="modal"
+                                        data-target=".bd-example-modal-xl"
+                                        >
+                                            <i class="fas fa-external-link-alt mr-1"></i> View demo
+                                        </a>
+                                    </div>
+
+                                    <div class="demo-code">
+                                        <a href="https://github.com/automalix/Website-Examples/tree/master/restaurant_landing_page" target="_blank">
+                                            <i class="fas fa-code-branch mr-1"></i> View code
+                                        </a>
+                                    </div>
+
+                                </small>
+                            </div>
+
+                        </div> <!-- end card -->
+
+                    </div> <!-- end column -->
+
+                    <!-- DEMO 2 -->
+                    <div class="col-md-4">
+
+                        <div class="card mb-4 box-shadow">
+
+                            <img
+                                id="demo_2"
+                                class="card-img-top demo-img"
+                                src="./portfolio/cgriffith/demo.jpg"
+                                alt="Chelsea Griffith's demo site image"
+                                data-toggle="modal"
+                                data-target=".bd-example-modal-xl"
+                                />
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Fiddle and Pipes
+                                </h5>
+                                <p class="card-text">
+                                    A nice short description of what she hoped to achieve with this site.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="text-muted mb-1">
+                                    Coded by: <strong>Chelsea Griffith</strong>
+                                </div>
+
+                                <small class="text-muted port-foot">
+                                    <div class="demo-modal">
+                                        <a
+                                        class="trigger-modal"
+                                        href="#demo_2"
+                                        data-toggle="modal"
+                                        data-target=".bd-example-modal-xl"
+                                        >
+                                            <i class="fas fa-external-link-alt mr-1"></i> View demo
+                                        </a>
+                                    </div>
+
+                                    <div class="demo-code">
+                                        <a href="https://www.github.com" target="_blank">
+                                            <i class="fas fa-code-branch mr-1"></i> View code
+                                        </a>
+                                    </div>
+
+                                </small>
+                            </div>
+
+                        </div> <!-- end card -->
+
+                    </div> <!-- end column -->
+
+                    <!-- DEMO 3 -->
+                    <div class="col-md-4">
+
+                        <div class="card mb-4 box-shadow">
+
+                            <img
+                                id="demo_3"
+                                class="card-img-top demo-img"
+                                src="./portfolio/tromano/demo.jpg"
+                                alt="Anthony Romano's demo site image"
+                                data-toggle="modal"
+                                data-target=".bd-example-modal-xl"
+                            />
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Swervin Vegan's
+                                </h5>
+                                <p class="card-text">
+                                    A single page restaurant demo highlighting several sections.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="text-muted mb-1">
+                                    Coded by: <strong>Anthony Romano</strong>
+                                </div>
+                                <small class="text-muted port-foot">
+
+                                    <div class="demo-modal">
+                                        <a
+                                        class="trigger-modal"
+                                        href="#demo_3"
+                                        data-toggle="modal"
+                                        data-target=".bd-example-modal-xl"
+                                        >
+                                            <i class="fas fa-external-link-alt mr-1"></i> View demo
+                                        </a>
+                                    </div>
+
+                                    <div class="demo-code">
+                                        <a href="https://github.com/datguyromano" target="_blank">
+                                            <i class="fas fa-code-branch mr-1"></i> View code
+                                        </a>
+                                    </div>
+
+                                </small>
+                            </div>
+
+                        </div> <!-- end card -->
+
+                    </div> <!-- end column -->
+
+                    <!-- DEMO 4 -->
+                    <div class="col-md-4">
+
+                        <div class="card mb-4 box-shadow">
+
+                            <img
+                                id="demo_4"
+                                class="card-img-top demo-img"
+                                src="./portfolio/smcnatt/demo.jpg"
+                                alt="Steve McNatt's demo site image"
+                                data-toggle="modal"
+                                data-target=".bd-example-modal-xl"
+                            />
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Steves Bar and Grill
+                                </h5>
+                                <p class="card-text">
+                                    A short description of the site here.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="text-muted mb-1">
+                                    Coded by: <strong>Steve McNatt</strong>
+                                </div>
+                                <small class="text-muted port-foot">
+
+                                    <div class="demo-modal">
+                                        <a
+                                        class="trigger-modal"
+                                        href="#demo_4"
+                                        data-toggle="modal"
+                                        data-target=".bd-example-modal-xl"
+                                        >
+                                            <i class="fas fa-external-link-alt mr-1"></i> View demo
+                                        </a>
+                                    </div>
+
+                                    <div class="demo-code">
+                                        <a href="https://github.com/ssmcnatt/landing_page" target="_blank">
+                                            <i class="fas fa-code-branch mr-1"></i> View code
+                                        </a>
+                                    </div>
+
+                                </small>
+                            </div>
+
+                        </div> <!-- end card -->
+
+                    </div> <!-- end column -->
+
+                    <!-- DEMO 5 -->
+                    <div class="col-md-4">
+
+                        <div class="card mb-4 box-shadow">
+
+                            <img
+                                id="demo_5"
+                                class="card-img-top demo-img"
+                                src="./portfolio/cwalls/demo.jpg"
+                                alt="Christopher Walls' demo site image"
+                                data-toggle="modal"
+                                data-target=".bd-example-modal-xl"
+                            />
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Jerk Paradise
+                                </h5>
+                                <p class="card-text">
+                                    A short description of the site here.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="text-muted mb-1">
+                                    Coded by: <strong>Christopher Walls</strong>
+                                </div>
+                                <small class="text-muted port-foot">
+
+                                    <div class="demo-modal">
+                                        <a
+                                        class="trigger-modal"
+                                        href="#demo_5"
+                                        data-toggle="modal"
+                                        data-target=".bd-example-modal-xl"
+                                        >
+                                            <i class="fas fa-external-link-alt mr-1"></i> View demo
+                                        </a>
+                                    </div>
+
+                                    <div class="demo-code">
+                                        <a href="https://github.com/codewalls31/mrkingston" target="_blank">
+                                            <i class="fas fa-code-branch mr-1"></i> View code
+                                        </a>
+                                    </div>
+
+                                </small>
+                            </div>
+
+                        </div> <!-- end card -->
+
+                    </div> <!-- end column -->
+
+                    <!-- DEMO 6 -->
+                    <div class="col-md-4">
+
+                        <div class="card mb-4 box-shadow">
+
+                            <img id="demo_6"
+                                class="card-img-top demo-img"
+                                src="./portfolio/dchhan/demo.jpg"
+                                alt="Dominique Chhan's demo site image" 
+                                data-toggle="modal"
+                                data-target=".bd-example-modal-xl"
+                            />
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">
+                                    Heng's Bakery and Cafe
+                                </h5>
+                                <p class="card-text">
+                                    A short description of the page here.
+                                </p>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="text-muted mb-1">
+                                    Coded by: <strong>Dominique Chhan</strong>
+                                </div>
+                                <small class="text-muted port-foot">
+
+                                    <div class="demo-modal">
+                                        <a
+                                        class="trigger-modal"
+                                        href="#demo_6"
+                                        data-toggle="modal"
+                                        data-target=".bd-example-modal-xl"
+                                        >
+                                            <i class="fas fa-external-link-alt mr-1"></i> View demo
+                                        </a>
+                                    </div>
+
+                                    <div class="demo-code">
+                                        <a href="https://www.github.com" target="_blank">
+                                            <i class="fas fa-code-branch mr-1"></i> View code
+                                        </a>
+                                    </div>
+
+                                </small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="c-footer">
+
+        <div id="top">
+            <a href="#go_to_top" class="menu_link">
+                <p id="arrow"> &lsaquo; </p>
+                <p> Top </p>
+            </a>
+        </div>
+
+        <div id="footer-info" class="breakpoint">
+
+            <div id="locations">
+                <h2> Locations </h2>
+                <div class="address_container">
+                    <div class="address1">
+                        <p> 106 st Lexington Ave </p>
+                        <p> Manhattan, NY — 12009 </p>
+                    </div>
+                    <div class="address2">
+                        <p> 25 Union Square West </p>
+                        <p> New York, NY — 10003 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hours">
+                <h2> Hours </h2>
+                <div class="open_container">
+                    <div class="open">
+                        <p>
+                            Monday - Friday
+                        </p>
+                        <p>
+                            8:30pm - 5:30pm
+                        </p>
+                    </div>
+                    <div class="open">
+                        <p>
+                            Saturday
+                        </p>
+                        <p>
+                            8:00am - 12:00pm
+                        </p>
+                    </div>
+                    <div class="open">
+                        <p>
+                            Available for private consolutations
+                        </p>
+                        <p>
+                            Hackatons on Sundays
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright_container">
+
+            <div id="copyright">
+                <div>
+                    <p>
+                        Copyright 2019 &copy; Created by <a href="#">Cohort 11</a>
+                    </p>
+                    <p>
+                        <a href="./careers.html">Careers</a>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Permissions and Copyright
+                        <span class="dot"> &middot; </span>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

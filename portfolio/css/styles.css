@@ -1,0 +1,155 @@
+.port-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.demo-modal,
+.demo-img {
+    cursor: pointer;
+}
+
+.demo-modal a,
+.demo-code a {
+    text-decoration: none;
+    color: var(--text-muted);
+}
+
+.c-nav-bg {
+    background-color: #0e131c;
+}
+
+
+/* iframe */
+
+.c-frame {
+    border-radius: 0.25rem;
+    border: none;
+}
+
+.m-box {
+    margin: 0 auto;
+    height: 93vh;
+}
+
+.modal-xl {
+    max-width: 90vw !important;
+}
+
+.modal {
+	width: 102% !important;
+}
+
+.close-mxl {
+	position:absolute;
+	top: 6vh;
+	right: 8vw;
+	z-index: 9900;
+	cursor: pointer;
+	text-align: right;
+}
+
+/****************/
+
+/* Footer */
+
+#c-footer {
+    background-color: #0e131c;
+	color: #f9f9f9;
+	line-height: 2;
+    position: relative;
+    /* padding: 0.25rem 2rem; */
+}
+
+.copyright_container {
+	width: 100%;
+	background-color: #393b46;
+}
+
+#footer-info {
+	display: flex;
+	justify-content: space-between;
+	min-height: 200px;
+}
+
+#footer-info h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+#footer-info p {
+	font-size: 13px;
+}
+
+#footer-info > div {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+#locations {
+	width: 35%;
+}
+
+#hours {
+	width: 50%;
+}
+
+.address_container,
+.open_container {
+	margin-top: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+#copyright p {
+	font-size: 12px;
+}
+
+#copyright {
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dot {
+	padding: 0 10px;
+	font-size: 20px;
+}
+
+#top {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: -25px;
+	transform: translateX(-50%);
+	background-color: #fff;
+	color: #0e131c;
+	line-height: normal;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#top p {
+	font-size: 12px;
+}
+
+#top a {
+	color: #0e131c;
+}
+
+p#arrow {
+	transform: rotate(90deg);
+	font-size: 18px;
+}
+
+.address1 {
+	padding-right: 30px;
+}
