@@ -7,7 +7,7 @@ const siteObj = {
     demo_3: "./portfolio/portfolio/tromano/index.html",
     demo_4: "./portfolio/portfolio/smcnatt/index.html",
     demo_5: "./portfolio/portfolio/cwalls/index.html",
-    demo_6: "./portfolio/portfolio/dchhan/index.html",
+    demo_6: "./portfolio/portfolio/cappleton/index.html",
 }
 
 function modalContent(selector) {
