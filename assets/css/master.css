@@ -1,7 +1,7 @@
 @import url('bootstrap.min.css');
 @import url('../nav/nav.css');
 @import url('../fontawesome/css/all.min.css');
-@import url('https://fonts.googleapis.com/css?family=Allura|Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Montserrat:400,700,900&display=swap');
 
 :root {
 	--dark-blue: #111226;
@@ -16,6 +16,9 @@
 	--faded-yellow-rgb: 242,202,153;
 	--cohort-orange-rgb: 242,84,48;
 	--burnt-orange-rgb: 191,83,73;
+
+	--accent-font: 'Oswald';
+	--main-font: 'Montserrat';
 }
 
 .bg-dark-blue {
@@ -84,4 +87,11 @@
 	color: #fff;
 	background-color: rgba(var(--burnt-orange-rgb), 0.8);
 	border-color: rgba(var(--burnt-orange-rgb), 0.8);
+}
+
+body, p {
+	margin: 0;
+	padding: 0;
+	font-family: var(--main-font), sans-serif, Calibri;
+	font-size: 16px;
 }
