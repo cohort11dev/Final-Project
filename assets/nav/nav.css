@@ -13,11 +13,15 @@ html {
 .m-top {
 	height: 56px;
 }
+
 .m-contain {
 	height: calc(100vh - 56px);
 	overflow: auto;
 	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(var(--slate-blue-rgb),0.5) rgb(var(--dark-blue-rgb));
 }
+
 
 /* NAV BAR */
 #nav {
