@@ -1,0 +1,87 @@
+@import url('bootstrap.min.css');
+@import url('../nav/nav.css');
+@import url('../fontawesome/css/all.min.css');
+@import url('https://fonts.googleapis.com/css?family=Allura|Montserrat:400,700,900&display=swap');
+
+:root {
+	--dark-blue: #111226;
+	--slate-blue: #393b46;
+	--faded-yellow: #f2CA99;
+	--cohort-orange: #F25430;
+	--burnt-orange: #BF5349;
+	/* use the RGB values like this:
+	   color: rgba(var(--dark-blue-rgb), 0.5) */
+	--dark-blue-rgb: 17,18,38;
+	--slate-blue-rgb: 152,154,166;
+	--faded-yellow-rgb: 242,202,153;
+	--cohort-orange-rgb: 242,84,48;
+	--burnt-orange-rgb: 191,83,73;
+}
+
+.bg-dark-blue {
+	background-color: var(--dark-blue);
+}
+
+.bg-slate-blue {
+	background-color: var(--slate-blue);
+}
+
+.bg-faded-yellow {
+	background-color: var(--faded-yellow);
+}
+
+.bg-cohort-orange {
+	background-color: var(--cohort-orange);
+}
+
+.bg-burnt-orange {
+	background-color: var(--burnt-orange);
+}
+
+.btn-db {
+    color: #fff;
+	background-color: var(--dark-blue);
+	border-color: var(--dark-blue);
+}
+
+.btn-db:hover {
+    color: #fff;
+	background-color: rgba(var(--dark-blue-rgb), 0.9);
+	border-color: var(--dark-blue);
+}
+
+.btn-sb {
+    color: #fff;
+	background-color: var(--slate-blue);
+	border-color: var(--slate-blue);
+}
+
+.btn-sb:hover {
+    color: #fff;
+	background-color: var(--dark-blue);
+	border-color: var(--dark-blue);
+}
+
+.btn-co {
+	color: #fff;
+	background-color: var(--cohort-orange);
+	border-color: var(--cohort-orange);
+}
+
+.btn-co:hover {
+	color: #fff;
+	background-color: var(--burnt-orange);
+	border-color: var(--burnt-orange);
+}
+
+.btn-bo {
+	color: #fff;
+	background-color: var(--burnt-orange);
+	border-color: var(--burnt-orange);
+}
+
+.btn-bo:hover {
+	color: #fff;
+	background-color: rgba(var(--burnt-orange-rgb), 0.8);
+	border-color: rgba(var(--burnt-orange-rgb), 0.8);
+}

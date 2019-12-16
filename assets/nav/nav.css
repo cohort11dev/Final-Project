@@ -1,0 +1,291 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* .crunchwrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	width: 100vw;
+}
+
+.topper {
+	height: 56px;
+}
+.contenter {
+	height: calc(100vh - 56px);
+} */
+
+/* NAV BAR */
+#nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	width: 100vw;
+}
+
+.nav-wrap,
+#info,
+#copyright {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#nav-logo {
+	width: 125px;
+	height: 30px;
+	background-image: url('../logo/cohort11_logo_lg.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#nav-logo-i {
+	width: 35px;
+	height: 30px;
+	background-image: url('../logo/c11_logo_sm.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.navbar-collapse {
+	flex-grow: 0;
+}
+
+.nav-wrap {
+	display: flex;
+}
+
+/* FOOTER */
+
+#footer {
+	background-color: var(--dark-blue);
+	color: #f9f9f9;
+	line-height: 2;
+	position: relative;
+}
+
+#footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.copyright-container {
+	width: 100%;
+	background-color: var(--slate-blue);
+}
+
+#info {
+	display: flex;
+	justify-content: space-between;
+	min-height: 200px;
+}
+
+#info h2 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+#info p {
+	font-size: 13px;
+}
+
+#info > div {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+}
+
+#locations {
+	width: 35%;
+}
+
+#hours {
+	width: 50%;
+}
+
+.address-container,
+.open-container {
+	list-style: none;
+	margin-left: 0;
+	padding: 0;
+	margin-top: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+#copyright ul li {
+	font-size: 12px;
+}
+
+#copyright {
+	min-height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.dot {
+	padding: 0 10px;
+	font-size: 20px;
+}
+.teamLink {
+	padding-left: 10px;
+}
+
+#top {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	top: -30px;
+	transform: translateX(-50%);
+	background-color: #fff;
+	color: #0e131c;
+	line-height: normal;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+#top p {
+	font-size: 12px;
+}
+
+#top a {
+	color: #0e131c;
+	text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media all and (max-width: 575px) {
+	.divider {
+		height: 400px;
+	}
+	
+	#copyright p {
+		font-size: 10px;
+	}
+	
+	#info {
+		flex-flow: column nowrap;
+	}
+	
+	#locations, div#hours {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+	
+	div#locations, .address-container {
+		flex-flow: column nowrap;
+	}
+	
+	div#hours {
+		margin-top: 30px;
+	}
+	
+	div#locations {
+		margin-top: 20px;
+	}
+	
+	.address1 {
+		padding-right: 0;
+	}
+}
+
+@media all and (max-width: 700px) {
+	
+	nav {
+		display: none;
+	}
+	
+	#open_menu.show, #close_menu.show {
+		display: block;
+		z-index: 5;
+	}
+	
+	#logo {
+		z-index: 5;
+	}
+}
+
+@media all and (max-width: 767px) {
+
+	#nav-logo {
+		width: 32px;
+		height: 25px;
+		background-image: url('../logo/c11_logo_sm_white.png');
+	}
+
+	.nav-wrap {
+		justify-content: space-between !important;
+	}
+
+	.open-container div:nth-of-type(2) {
+		margin-top: 20px;
+	}
+	
+	#locations {
+		align-self: flex-start;
+	}
+	
+	.open-container {
+		flex-flow: column nowrap;
+	}
+	
+	#info {
+		justify-content: space-between;
+		width: 90%;
+	}
+	
+}
+
+@media all and (min-width: 768px) {
+	.nav-wrap {
+		justify-content: center !important;
+	}
+	.navbar-expand-md .navbar-nav .nav-link {
+		padding-right: 2vw;
+		padding-left: 2vw;
+	}
+	
+}
+
+@media all and (max-width: 990px) {
+	#copyright p {
+		font-size: 12px;
+	}
+	
+	#copyright {
+		flex-flow: column nowrap;
+		padding: 25px 0;
+	}
+	
+	#copyright div {
+		width: 80%;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 1097px) {
+	.open-container div:nth-of-type(3) {
+		width: 100%;
+	}
+	
+	.address2, .open-container div:nth-of-type(3) {
+		margin-top: 20px;
+	}
+	
+	#info {
+		padding: 40px 0;
+	}
+}
