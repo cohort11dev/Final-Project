@@ -56,14 +56,14 @@ export const nav = function () {
     <div id="locations">
         <h2> Locations </h2>
         <ul class="address-container">
-            <li class="address1">
+            <li class="mt-3">
                 <p>
                     106 st Lexington Ave
                     <br>
                     Manhattan, NY — 12009
                 </p>
             </li>
-            <li class="address2">
+            <li class="mt-3">
                 <p>
                     25 Union Square West
                     <br>
@@ -76,24 +76,22 @@ export const nav = function () {
     <div id="hours">
         <h2> Hours </h2>
         <ul class="open-container">
-            <li class="open">
+            <li class="open mt-3">
                 <p>
                     Monday - Friday
                     <br>
                     8:30pm - 5:30pm
                 </p>
-                <br>
             </li>
-            <li class="open">
+            <li class="open mt-3">
                 <p>
                     Saturday
                     <br>
                     8:00am - 12:00pm
                 </p>
-                <br>
             </li>
                     
-            <li class="open">
+            <li class="open mt-3">
                 <p>
                     Available for private consolutations
                     <br>
