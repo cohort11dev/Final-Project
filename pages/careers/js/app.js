@@ -1,7 +1,7 @@
 import { jObject } from './descriptions.js'
 
 (function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
 })();
 
 document.querySelectorAll('[data-type^="job"]').forEach(cur => {
