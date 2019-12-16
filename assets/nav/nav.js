@@ -125,3 +125,5 @@ export const nav = function () {
     document.querySelector('#nav').innerHTML = navbar;
     document.querySelector('#footer').innerHTML = footer;
 }
+
+nav();
