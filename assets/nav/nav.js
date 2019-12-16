@@ -29,13 +29,13 @@ export const nav = function () {
                 <a class="nav-link" href="${index ? '#about' : './about.html'}">About</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('portfolio.html'))}">
-                <a class="nav-link" href="${index ? '#portfolio' : './portfolio.html'}">Portfoilo</a>
+                <a class="nav-link" href="${index ? './pages/portfolio.html' : './portfolio.html'}">Portfoilo</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('contact.html'))}">
-                <a class="nav-link" href="${index ? '#contact' : './contact.html'}">Contact</a>
+                <a class="nav-link" href="${index ? './pages/contact.html' : './contact.html'}">Contact</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('careers.html'))}">
-                <a class="nav-link" href="${index ? '#careers' : './careers.html'}">Careers</a>
+                <a class="nav-link" href="${index ? './pages/careers.html' : './careers.html'}">Careers</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('blog.html'))}">
                 <a class="nav-link" href="${index ? '#blog' : './blog.html'}">Blog</a>
@@ -47,7 +47,7 @@ export const nav = function () {
 
     const footer = `
 <div id="top">
-    <a href="#go_to_top" class="menu-link">
+    <a href="#to-top" class="menu-link">
         <i class="fas fa-sort-up mt-1"></i>
         <p> Top </p>
     </a>
