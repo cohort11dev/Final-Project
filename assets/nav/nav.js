@@ -23,7 +23,7 @@ export const nav = function () {
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item ${checkPage(document.URL.includes('index.html'))}">
-                <a class="nav-link" href="${index ? '#' : '../../index.html'}">Home</a>
+                <a class="nav-link" href="${index ? '#to-top' : '../../index.html'}">Home</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('about.html'))}">
                 <a class="nav-link" href="${index ? '#about' : './about.html'}">About</a>
@@ -31,20 +31,20 @@ export const nav = function () {
             <li class="nav-item ${checkPage(document.URL.includes('portfolio.html'))}">
                 <a class="nav-link" href="${index ? '#portfolio' : './portfolio.html'}">Portfoilo</a>
             </li>
+            <li class="nav-item ${checkPage(document.URL.includes('blog.html'))}">
+                <a class="nav-link" href="${index ? '#blog' : './blog.html'}">Blog</a>
+            </li>
             <li class="nav-item ${checkPage(document.URL.includes('contact.html'))}">
                 <a class="nav-link" href="${index ? './pages/contact.html' : './contact.html'}">Contact</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('careers.html'))}">
                 <a class="nav-link" href="${index ? './pages/careers.html' : './careers.html'}">Careers</a>
             </li>
-            <li class="nav-item ${checkPage(document.URL.includes('blog.html'))}">
-                <a class="nav-link" href="${index ? '#blog' : './blog.html'}">Blog</a>
-            </li>
         </ul>
     </div>
 </div>
 `;
-
+// RmVsaXggd2FzIGhlcmU=
     const footer = `
 <div id="top">
     <a href="#to-top" class="menu-link">
