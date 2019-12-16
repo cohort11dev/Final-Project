@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Cardo&display=swap" rel="stylesheet">
+    <title>The Lunch Box</title>
+</head>
+
+<body>
+
+    <!-- CART (HIDDEN BY DEFAULT) -->
+    <div id="cart" class="modal" aria-hidden="true">
+        <div class="modal-c">
+            <div class="cart-modal-section">
+                <div class="close-modal abs">
+                    <i class="fas fa-times-circle close-modal"></i>
+                    <div class="sr-only">Close modal button</div>
+                </div>
+                <div class="cart-modal-container">
+                    <div class="modal-title">
+                        Your Cart
+                    </div>
+                    <div class="desc">Cart Selection</div>
+                        <ul id="cart-list">
+                            <li class="text-c">Your cart is currently empty!</li>
+                            <li class="text-c">Why not check out our menu to pick out your next meal?</li>
+                            <!-- JavaScript loads this in -->
+                        </ul>
+                    <div id="total">
+                        <!-- JavaScript loads this in -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONFIRM AGE FOR ALCOHOL MENU (HIDDEN BY DEFAULT) -->
+        <div id="age-check" class="modal" aria-hidden="true">
+            <div class="modal-container">
+                <div class="modal-top">
+                    <div>Hold on...</div>
+                    <div class="close-modal">
+                        <i class="fas fa-times-circle close-modal"></i>
+                        <div class="sr-only">Close modal button</div>
+                    </div>
+                </div>
+                <div class="modal-section">
+                    <div class="desc">Are you at least 18 years old or older?</div>
+                </div>
+                <div class="modal-section vertical-m">
+                    <button id="yesSel" class="confirm-age btn">Yes</button>
+                    <button id="noSel" class="confirm-age btn">No</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="nav-menu">
+            <div class="nav-bar-text">The Lunch Box <i class="fas fa-utensils"></i></div>
+            <ul id="nav-list">
+                <li class="list-item">
+                    <a href="#home" class="nav-anchor tab-anchor">Home</a>
+                </li>
+                <li class="list-item">
+                    <a href="#menu" class="nav-anchor tab-anchor">Menu</a>
+                </li>
+                <li class="list-item">
+                    <a href="#about" class="nav-anchor tab-anchor">About Us</a>
+                </li>
+                <li class="list-item">
+                    <a href="#locations" class="nav-anchor tab-anchor">Locations</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i id="hamburger-toggle" class="fas fa-chevron-down"></i>
+                <div class="sr-only">Button that opens the mobile menu</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+        <div id="splash-page">
+            <div class="splash-left">
+                <div class="desc">
+                    World class cuisine delivered to your door.
+                </div>
+                <a id="read-more" href="#section" class="btn">Learn More</a>
+            </div>
+            <div class="splash-right">
+                The Lunch Box
+            </div>
+        </div>
+    </div>
+
+<!-- TABBED CONTENT STARTS HERE -->
+    <li id="wrapper">
+
+        <!-- CART BUTTON -->
+        <div id="cart-button" class="tt">
+            <span class="crt" aria-hidden="true">Cart</span>
+            <i class="fas fa-shopping-cart fa-lg"></i>
+            <div class="sr-only">Shopping Cart Button</div>
+        </div>
+
+        <!-- Button in jumbotron scrolls to this anchor -->
+        <a id="scrollto" name="section"></a>
+
+        <!-- HOME SECTION -->
+        <article id="home" class="main-tab tab-content show">
+            <div class="home-image">
+                <div class="sr-only">Splash image of a sushi dish against a black wooden table.</div>
+            </div>
+
+            <div class="main-tab-header text-c">
+                Welcome home!
+            </div>
+
+            <section class="home-section">
+                <div class="width-m margin-a">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius odit earum officia dolorum eveniet architecto deleniti molestiae quae sit et natus laborum maxime, quaerat totam dolor. Corrupti, velit ea!
+                </div>
+            </section>
+
+        </article>
+
+        <!-- MENU SECTION -->
+        <a name="home"></a>
+        <article id="menu" class="main-tab tab-content">
+
+            <div id="menu-container">
+
+                <!-- SIDE NAV FOR MENU SELECTION -->
+                <nav id="menu-nav">
+                    <a href="#appetizers" class="tab-anchor sub-menu">Appetizers</a>
+                    <a href="#lunch" class="tab-anchor sub-menu">Lunch Specials</a>
+                    <a href="#dinner" class="tab-anchor sub-menu">Entrées</a>
+                    <a href="#drinks" class="tab-anchor sub-menu">Drinks</a>
+                    <a href="#alcohol" class="tab-anchor sub-menu">Alcohol</a>
+                </nav>
+
+                <!-- MAIN CONTAINER FOR MENU ITEMS -->
+                <div id="menu-items">
+                    <section id="default" class="tab-content sub-menu show">
+                        <div class="menu-splash-image">
+                            <div class="sub-menu-header">Our Menu</div>
+                        </div>
+                        <p class="text-c desc">Take a look at our delectable food selection from the menu.</p>
+                        <p class="text-c desc">All of our menu items are made in-house daily with fresh ingredients for the best flavour experience. Even the most picky eater will be delighted by our signature dishes.</p>
+                    </section>
+                    <section id="appetizers" class="tab-content sub-menu">
+                        <!-- Javascript loads this in -->
+                    </section>
+                    <section id="lunch" class="tab-content sub-menu">
+                        <!-- Javascript loads this in -->
+                    </section>
+                    <section id="dinner" class="tab-content sub-menu">
+                        <!-- Javascript loads this in -->
+                    </section>
+                    <section id="drinks" class="tab-content sub-menu">
+                        <!-- Javascript loads this in -->
+                    </section>
+                    <section id="alcohol" class="tab-content sub-menu">
+                        <!-- Javascript loads this in -->
+                    </section>
+                </div>
+            </div>
+
+        </article>
+
+        <!-- ABOUT SECTION -->
+        <a name="about"></a>
+        <article id="about" class="main-tab tab-content">
+
+            <div class="about-image"></div>
+
+                <div class="main-tab-header text-c">
+                    Who are we?
+                </div>
+    
+                <section class="about-section">
+                    <div class="width-m margin-a">
+                        <span class="big">L</span>orem ipsum dolor, sit amet consectetur adipisicing elit. Eius odit earum officia dolorum eveniet architecto deleniti molestiae quae sit et natus laborum maxime, quaerat totam dolor. Corrupti, velit ea!
+                    </div>
+                </section>
+                <div class="main-tab-header text-c">
+                    Contact us!
+                </div>
+                <div class="vertical-m">
+                    <ul class="footer-list justify-c">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            contact@thelunchbox.com
+                        </li>
+                        <li>
+                            <i class="fas fa-location-arrow"></i>
+                            296 South San Carlos Drive NYC
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            1-800-888-8888
+                        </li>
+                    </ul>
+                </div>
+        </article>
+
+        <!-- LOCATION SECTION -->
+        <a name="locations"></a>
+        <article id="locations" class="main-tab tab-content">
+
+                <div class="location-image"></div>
+
+                <div class="main-tab-header text-c">
+                    Where to find us?
+                </div>
+    
+                <section class="location-section">
+                    <div class="width-m margin-a">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius odit earum officia dolorum eveniet architecto deleniti molestiae quae sit et natus laborum maxime, quaerat totam dolor. Corrupti, velit ea!
+                    </div>
+                    <ul class="flex column align-items-c desc">
+                        <li>
+                            <i class="fas fa-location-arrow"></i>
+                            296 South San Carlos Drive
+                        </li>
+                        <li>
+                            New York, NY 10040
+                        </li>
+                    </ul>
+                </section>
+
+        </article>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div>
+            <ul class="footer-list contact-foot">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    contact@thelunchbox.com
+                </li>
+                <li>
+                    <i class="fas fa-location-arrow"></i>
+                    296 South San Carlos Drive NYC
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    1-800-888-8888
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="footer-list hours-list">
+                <li class="hours">
+                    <span>Monday - Friday</span>
+                    <span>8AM-2PM</span>
+                </li>
+                <li class="hours">
+                    <span>Saturday</span>
+                    <span>10AM-5PM</span>
+                </li>
+                <li class="hours">
+                    <span>Sunday</span>
+                    <span>12AM-5PM</span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/events.js" type="module"></script>
+</body>
+
+</html>
