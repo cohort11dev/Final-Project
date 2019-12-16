@@ -29,7 +29,7 @@ export const nav = function () {
                 <a class="nav-link" href="${index ? '#about' : './about.html'}">About</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('portfolio.html'))}">
-                <a class="nav-link" href="${index ? './pages/portfolio.html' : './portfolio.html'}">Portfoilo</a>
+                <a class="nav-link" href="${index ? '#portfolio' : './portfolio.html'}">Portfoilo</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('contact.html'))}">
                 <a class="nav-link" href="${index ? './pages/contact.html' : './contact.html'}">Contact</a>
@@ -124,10 +124,6 @@ export const nav = function () {
 </div>
 `;
     document.querySelector('#nav').classList.add('navbar', 'justify-content-between', 'navbar-expand-md', 'navbar-dark', 'bg-dark-blue')
-    if (document.URL.includes('index.html')) {
-        document.querySelector('#nav').innerHTML = navbar;
-    } else {
-        document.querySelector('#nav').innerHTML = navbar;
-    }
+    document.querySelector('#nav').innerHTML = navbar;
     document.querySelector('#footer').innerHTML = footer;
 }
