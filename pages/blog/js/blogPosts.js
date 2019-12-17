@@ -1,4 +1,4 @@
-let blogPosts = [
+export let blogPosts = [
     {
         title: "The Gift of Golden Opportunity",
         date: "December 10, 2019",
