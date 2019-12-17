@@ -1,7 +1,6 @@
 import { jumbotron } from './jumbotron.js';
 
 export const nav = function () {
-    const index = document.URL.includes('index.html');
     const checkActivePage = bool => {
         if (bool) return 'active';
         return '';
@@ -9,7 +8,7 @@ export const nav = function () {
 
     const navbar = `<div class="container nav-wrap">
         <a class="navbar-brand" href="#" aria-label="Logo">
-            <div id="${index ? 'nav-logo-i' : 'nav-logo'}" alt="Cohort 11 Dev"></div>
+            <div id="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? 'nav-logo-i' : 'nav-logo'}" alt="Cohort 11 Dev"></div>
         </a>
         <button class="navbar-toggler"
                 type="button"
