@@ -1,5 +1,3 @@
-import {blogPosts} from './blogPosts.js';
-
 const removeSpaces = title => {
     // remove spaces from item name to be used as item ID
     title = title.replace(/\s+/g, '-');
@@ -11,15 +9,15 @@ const renderBlogCard = (blog) => {
     markup = `
         <div class="card border-0">
             <div class="row no-gutters">
-                <div class="col-md-3 blogCardImg"></div>
+                <div class="col-md-3 blogCardImg" style="background: center/cover no-repeat url(${blog.image})"></div>
                 <img src="${blog.image}" class="cardSmallImg" alt="tech image">
                 <div class="col-md-9 align-self-center">
                     <div class="card-body ml-2">
                         <h3 class="card-title">${blog.title}</h3>
-                        <p class="card-text blog-date mb-2"><small>${blog.date} by <span class="text-muted">${blog.author}</span></small></p>
+                        <p class="card-text blog-date"><small>${blog.date} by <span class="text-muted">${blog.author}</span></small></p>
                         <p class="card-text">${blog.cardPost}</p>
-                        <a href="#" class="mt-3 btn btn-outline-primary" data-toggle="modal"
-                        data-target="#${removeSpaces(blog.title)}">Continue Reading <i class="fal fa-angle-double-right"></i></a>
+                        <a href="#" data-toggle="modal"
+                        data-target="#${removeSpaces(blog.title)}">Continue Reading <i class="fa fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -36,15 +34,15 @@ const renderBlogPost = (blog) => {
         aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content p-3">
-                <img src="${blog.fullImage}" alt="tech image">
-                <div class="blog-post">
-                    <h4 class="font-weight-bold mt-3">${blog.title}</h4>
-                    <small class="d-inline-block blog-date font-italic mb-2">${blog.date} by <span class="text-muted">${blog.author}</span></small>
-                    ${blog.fullPost}     
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+                    <img src="${blog.fullImage}" alt="tech image">
+                    <div class="blog-post">
+                        <h4 class="font-weight-bold my-3">${blog.title}</h4>
+                        <p class="font-italic mb-2">${blog.date} by <span class="text-muted">${blog.author}</span></p>
+                        ${blog.fullPost}     
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
