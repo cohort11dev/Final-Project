@@ -23,7 +23,7 @@ export const nav = function () {
                         
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item ${checkActivePage(document.URL.includes('index.html'))}">
+                <li class="nav-item ${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? 'active' : ''}">
                     <a class="nav-link" href="${index ? '#to-top' : 'https://cohort11dev.github.io/Final-Project/'}">Home</a>
                 </li>
                 <li class="nav-item">
@@ -59,7 +59,7 @@ export const nav = function () {
 const checkPage = function(url) {
     let i = -1;
 
-    if(url.includes('index')) return '';
+    if(document.URL === 'https://cohort11dev.github.io/Final-Project/') return '';
     else if(url.includes('about')) i = 0;
     else if(url.includes('portfolio')) i = 1;
     else if(url.includes('blog')) i = 2;
