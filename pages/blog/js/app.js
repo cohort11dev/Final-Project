@@ -18,8 +18,8 @@ const renderBlogCard = (blog) => {
                         <h3 class="card-title">${blog.title}</h3>
                         <p class="card-text blog-date"><small>${blog.date} by <span class="text-muted">${blog.author}</span></small></p>
                         <p class="card-text">${blog.cardPost}</p>
-                        <a href="#" data-toggle="modal"
-                        data-target="#${removeSpaces(blog.title)}">Continue Reading <i class="fa fas fa-angle-double-right"></i></a>
+                        <a class="btn btn-outline-primary mt-3" href="#" data-toggle="modal"
+                        data-target="#${removeSpaces(blog.title)}">Continue Reading <i class="fal fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -27,7 +27,6 @@ const renderBlogCard = (blog) => {
     `;
     document.querySelector(".container").insertAdjacentHTML("beforeend", markup);
 }
-
 
 const renderBlogPost = (blog) => {
     let markup;
@@ -38,7 +37,7 @@ const renderBlogPost = (blog) => {
                 <div class="modal-content p-3">
                     <img src="${blog.fullImage}" alt="tech image">
                     <div class="blog-post">
-                        <h4 class="font-weight-bold my-3">${blog.title}</h4>
+                        <h3 class="font-weight-bold mt-3">${blog.title}</h3>
                         <p class="font-italic mb-2">${blog.date} by <span class="text-muted">${blog.author}</span></p>
                         ${blog.fullPost}     
                     </div>
