@@ -2,79 +2,79 @@ const teamMembers = [
     {
         name: "Chelsea Griffith",
         title: "Senior Web Developer",
-        bio: "lorem ipsum",
+        bio: "Baker, Traveler, Pizza enthusiast",
         image: "images/Chelsea.jpg"
     },
     {
         name: "Saodie Chhan",
         title: "Customer Service Manager",
-        bio: "lorem ipsum",
+        bio: "Marvel lover. My favorite color is forest green.",
         image: "images/Saodie.jpg"
     },
     {
         name: "Christopher Walls",
         title: "Graphic Designer",
-        bio: "lorem ipsum",
+        bio: "BAMF with a passion to improve daily. Learned to code to build skills. Graphic designer building off of the world around me.",
         image: "images/Walls.jpg"
     },
     {
         name: "Rosalind Balton",
         title: "IT Project Manager",
-        bio: "lorem ipsum",
+        bio: "Came to code for BIG$, stayed in code camp for the challenge. Favorite cartoon character is Foghorn Leghorn.",
         image: "images/Rosalind.jpg"
     },
     {
         name: "Felix Gelly",
         title: "Senior Web Developer",
-        bio: "lorem ipsum",
+        bio: "I own two rabbits. Favourite colour is chartreuse.",
         image: "images/Felix.png"
     },
     {
         name: "Steve McNatt",
         title: "Senior Web Developer",
-        bio: "lorem ipsum",
+        bio: "I chose to code because I enjoy solving problems. Favorite cartoon character is Marvin Martian.",
         image: "images/Steve.jpg"
     },
     {
         name: "Christopher Appleton",
         title: "Marketing Manager",
-        bio: "lorem ipsum",
+        bio: "Essex saved Azur Lane.",
         image: "images/Appleton.jpg"
     },
     {
         name: "Katie Kutz",
         title: "Junior Web Developer",
-        bio: "lorem ipsum",
+        bio: "I love playing classical piano, rooting for the Green Bay Packers and volunteering in my community.",
         image: "images/Katie.jpg"
     },
     {
         name: "Donniesha Gregory",
         title: "Senior Account Manager",
-        bio: "lorem ipsum",
+        bio: "Life has no time constraints, get out of the fast lane and enjoy life. It does not matter when you arrive, as long as you are happy when you get there.",
         image: "images/Donn.jpg"
     },
     {
         name: "Dominique Chhan",
         title: "Social Media Coordinator",
-        bio: "lorem ipsum",
+        bio: "Animal lover. Food and boba enthusiast.",
         image: "images/Dominique.jpg"
     },
     {
         name: "Anthony Romano",
         title: "Back-End Web Developer",
-        bio: "lorem ipsum",
+        bio: "I started coding because of the movie Tron. I love spending time with my wife and boys. and I love writing short science fiction stories.",
         image: "images/Romano.jpg"
     },
     {
         name: "Andrea Kraemer",
         title: "Creative Content Director",
-        bio: "lorem ipsum",
+        bio: "I found coding or..coding found me? Fresh out of the oven, web developer. Nature enthusiast, treasure hunter, photographer, & Monarch mama.",
         image: "images/Andrea.jpg"
     },
     {
         name: "Scarlett Liu",
         title: "Junior Web Developer",
-        bio: "lorem ipsum",
-        image: ""
+        bio: "I love to garden with my kids and my favorite color is green.",
+        image: "images/Scarlett.jpg"
     }
 ]
