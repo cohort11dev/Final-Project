@@ -4,33 +4,37 @@
     overflow: hidden;
 }
 
-.col-md-3.blogCardImg {
-    background: center/cover no-repeat url("https://placeimg.com/300/320/tech");
-}
-
 .cardSmallImg {
     display: none;
 }
 
-h3.card-title {
-    margin-bottom: 0.1rem;
+.modal-content img {
+    height: auto;
+    width: 100%;
 }
 
-h4 {
-    margin-bottom: 0.2rem;
+h3.card-title{
+    margin-bottom: 0;
 }
 
-.modal-content p {
-    margin-bottom:1rem;
+.blog-date {
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    margin-bottom: 0.75rem;
 }
 
 @media screen and (max-width: 770px) {
+    
     .cardSmallImg {
         display: block;
         height: auto;
         width: 100%;
     }
+    
     .blogCardImg {
         display: none;
     }
+    
 }
