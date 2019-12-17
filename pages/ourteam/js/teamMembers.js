@@ -32,7 +32,7 @@ export const teamMembers = [
     {
         name: "Steve McNatt",
         title: "Senior Web Developer",
-        bio: "I chose to code because I enjoy solving problems. Favorite cartoon character is Marvin Martian.",
+        bio: "I chose to code because I enjoy solving problems. Favorite cartoon character is Marvin the Martian.",
         image: "../pages/ourteam/images/Steve.jpg"
     },
     {
