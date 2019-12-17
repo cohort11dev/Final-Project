@@ -1,7 +1,7 @@
 @import url('bootstrap.min.css');
 @import url('../nav/nav.css');
 @import url('../fontawesome/css/all.min.css');
-@import url('https://fonts.googleapis.com/css?family=Oswald|Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat:400,700,900&display=swap');
 
 :root {
 	--dark-blue: #111226;
@@ -17,7 +17,7 @@
 	--cohort-orange-rgb: 242,84,48;
 	--burnt-orange-rgb: 191,83,73;
 
-	--accent-font: 'Oswald';
+	--accent-font: 'Libre Baskerville';
 	--main-font: 'Montserrat';
 }
 
