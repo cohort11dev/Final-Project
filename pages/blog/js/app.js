@@ -1,3 +1,5 @@
+import {blogPosts} from './blogPosts.js';
+
 const removeSpaces = title => {
     // remove spaces from item name to be used as item ID
     title = title.replace(/\s+/g, '-');
