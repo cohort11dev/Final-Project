@@ -3,8 +3,8 @@ export let blogPosts = [
         title: "The Gift of Golden Opportunity",
         date: "December 10, 2019",
         author: "Andrea Kraemer",
-        image: "./images/opportunity.jpg",
-        fullImage: "./images/opportunity.jpg",
+        image: "./blog/images/opportunity.jpg",
+        fullImage: "./blog/images/opportunity.jpg",
         cardPost: "The YWeb Career Academy is a condensed coding boot camp offered by the YWCA that strives to empower women, people of color and the under-represented to broaden their horizons, overcome hardships, and eliminate barriers through learning front end web development along with job training skills that increases their chances to go on to continue education, to freelance or land an internship with one of the local tech companies.",
         fullPost: `<p>The YWeb Career Academy is a condensed coding boot camp offered by the YWCA that strives to empower women, people of color and the under-represented to broaden their horizons, overcome hardships, and eliminate barriers through learning front end web development along with job training skills that increases their chances to go on to continue education, to freelance or land an internship with one of the local tech companies.</p>
         <p>The YWEB is an umbrella of resources made available as part of the program in helping students become well rounded and ready to achieve success. In the three and a half month boot camp, they learn to code and receive job training. Also, the YWCA offers other supportive resources such as housing and transportation.</p>
@@ -14,8 +14,8 @@ export let blogPosts = [
         title: "Path to Progress",
         date: "December 16, 2019",
         author: "Chris Walls",
-        image: "./images/progress.jpg",
-        fullImage: "./images/progress.jpg",
+        image: "./blog/images/progress.jpg",
+        fullImage: "./blog/images/progress.jpg",
         cardPost: `"If there is no struggle, there is no progress."  This quote by Frederick Douglass speaks volumes to many web developers.  The days spent on any given problem may be long and arduous but can transform into a place of happiness, excitement, and success.  Read on to find out some tips and tricks on how to escape the slump and problem-solve effectively!`,
         fullPost: `<p>"If there is no struggle, there is no progress."  This quote by Frederick Douglass speaks volumes to many web developers.  The days spent on any given problem may be long and arduous but can transform into a place of happiness, excitement, and success.  Read on to find out some tips and tricks on how to escape the slump and problem-solve effectively!</p>
         <p>As a front-end developer, I mainly find myself either stuck on the way I want the page design to look, or it ends up being a syntax error.  These common issues are sometimes easily overcome by following some steps that other developers have used in the past.</p> 
