@@ -193,6 +193,41 @@ html {
 	text-decoration: none;
 }
 
+/* JUMBOTRON */
+
+.p-topic {
+	color: var(--dark-blue);
+	letter-spacing: 0.3rem;
+	margin-top: -30px;
+	font-weight: 900;
+	font-size: 50px;
+}
+
+.p-highlight {
+	color: rgb(var(--slate-blue-rgb));
+	font-family: var(--accent-font), cursive, Calibri, sans-serif;
+	text-transform: lowercase;
+	font-size: 35px;
+	letter-spacing: 0.7rem;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	background:
+	radial-gradient(circle farthest-side at 0% 50%,var(--light-grey)23.5%,rgba(240,166,17,0) 0)21px 30px,
+	radial-gradient(circle farthest-side at 0% 50%,var(--light-grey-alt) 24%,rgba(240,166,17,0) 0)19px 30px,
+	linear-gradient(var(--light-grey)14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,var(--light-grey)0)0 0,
+	linear-gradient(150deg,var(--light-grey)24%,var(--light-grey-alt) 0,var(--light-grey-alt) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--light-grey-alt) 0,var(--light-grey-alt) 76%,var(--light-grey)0)0 0,
+	linear-gradient(30deg,var(--light-grey)24%,var(--light-grey-alt) 0,var(--light-grey-alt) 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,var(--light-grey-alt) 0,var(--light-grey-alt) 76%,var(--light-grey)0)0 0,
+	linear-gradient(90deg,var(--light-grey-alt) 2%,var(--light-grey)0,var(--light-grey)98%,var(--light-grey-alt) 0%)0 0 #000;
+	background-size: 40px 60px;
+}
+
+.h-wrap {
+    width: 75%;
+}
+
+
 /* MEDIA QUERIES */
 @media all and (max-width: 575px) {
 	.divider {
@@ -274,6 +309,10 @@ html {
 		justify-content: space-between;
 		width: 90%;
 	}
+
+	.h-wrap {
+        width: 100%;
+    }
 	
 }
 
