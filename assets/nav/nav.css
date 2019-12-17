@@ -227,6 +227,9 @@ html {
     width: 75%;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+	background-color: var(--cohort-orange);
+}
 
 /* MEDIA QUERIES */
 @media all and (max-width: 575px) {
