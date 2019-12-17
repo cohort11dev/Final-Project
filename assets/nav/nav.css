@@ -80,6 +80,14 @@ html {
 }
 
 /* FOOTER */
+#copyright a {
+	text-decoration: none !important;
+	color: #e6e6e6;
+}
+
+#copyright a:hover {
+	color: #FFF;
+}
 
 #footer {
 	background-color: var(--dark-blue);
