@@ -9,7 +9,7 @@ const renderBlogCard = (blog) => {
     markup = `
         <div class="card border-0">
             <div class="row no-gutters">
-                <div class="col-md-3 blogCardImg"></div>
+                <div class="col-md-3 blogCardImg" style="background: center/cover no-repeat url(${blog.image})"></div>
                 <img src="${blog.image}" class="cardSmallImg" alt="tech image">
                 <div class="col-md-9 align-self-center">
                     <div class="card-body ml-2">
@@ -34,15 +34,15 @@ const renderBlogPost = (blog) => {
         aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content p-3">
-                <img src="${blog.fullImage}" alt="tech image">
-                <div class="blog-post">
-                    <h4 class="font-weight-bold my-3">${blog.title}</h4>
-                    <p class="font-italic mb-2">${blog.date} by <span class="text-muted">${blog.author}</span></p>
-                    ${blog.fullPost}     
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+                    <img src="${blog.fullImage}" alt="tech image">
+                    <div class="blog-post">
+                        <h4 class="font-weight-bold my-3">${blog.title}</h4>
+                        <p class="font-italic mb-2">${blog.date} by <span class="text-muted">${blog.author}</span></p>
+                        ${blog.fullPost}     
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
