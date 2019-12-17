@@ -1,0 +1,36 @@
+.card {
+    box-shadow:  0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d4;
+    margin: 5% 0;
+    overflow: hidden;
+}
+
+.col-md-3.blogCardImg {
+    background: center/cover no-repeat url("https://placeimg.com/300/320/tech");
+}
+
+.cardSmallImg {
+    display: none;
+}
+
+h3.card-title {
+    margin-bottom: 0.1rem;
+}
+
+h4 {
+    margin-bottom: 0.2rem;
+}
+
+.modal-content p {
+    margin-bottom:1rem;
+}
+
+@media screen and (max-width: 770px) {
+    .cardSmallImg {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .blogCardImg {
+        display: none;
+    }
+}
