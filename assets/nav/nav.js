@@ -136,14 +136,14 @@ const jumbo = checkPage(document.URL);
                 <li class="dot">&copy;</li>
                 <li>Cohort 11 Dev</li>
                 <li class="teamLink">
-                    &laquo; <a href="${index ? './pages/ourteam.html' : './ourteam.html'}">Meet the team</a> &raquo;
+                    &laquo; <a href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? './pages/ourteam.html' : './ourteam.html'}">Meet the team</a> &raquo;
                 </li>
             </ul>
             <ul class="d-flex justify-content-center">
                 <li>Permissions and Copyright</li>
                 <li class="dot"> &middot; </li>
                 <li>
-                    <a href="${index ? './pages/contact.html' : './contact.html'}">Contact Us</a>
+                    <a href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? './pages/contact.html' : './contact.html'}">Contact Us</a>
                 </li>
             </ul>
         </div>
