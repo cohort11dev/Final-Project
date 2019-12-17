@@ -1,0 +1,1099 @@
+:root {
+    --primary: #183052;
+    --secondary: #33667e;
+    --secondary-light: #4a829c;
+    --tertiary: #47ddc2;
+    --accent: #f2ca50;
+    --five: #d9564a;
+    --grey: #999;
+    --light: #ddd;
+    --transp-black: rgba(0, 0, 0, 0.55);
+    --striped: repeating-linear-gradient(45deg, transparent,
+        transparent 5vw,
+        rgba(100,100,100,0.1) 5vw,
+        rgba(100,100,100,0.1) 10vw);
+}
+
+/* MOBILE FIRST SIZINGS */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+    /* striped background */
+    background-image: var(--striped);
+    font-family: 'Roboto';
+    font-size: 12pt;
+    max-width: 100vw;
+}
+
+p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.15s ease-in;
+}
+
+ul, li {
+    list-style: none;
+}
+
+#wrapper {
+    margin: 0 auto;
+
+    /* mobile */
+    display: block;
+    width: 100%;
+}
+/* #wrapper desktop */
+@media only screen and (min-width: 1080px) {
+    #wrapper {
+        width: 90%;
+    }
+}
+
+/* Screen reader only, for icon/button descriptions */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+      -webkit-clip-path: inset(50%);
+    border: 0;
+}
+
+/* Small anchor to scroll to */
+#scrollto {
+    position: relative;
+    top: 12px;
+}
+
+/* Buttons */
+.btn {
+    cursor: pointer;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border: 2px solid var(--primary);
+    border-radius: 0.25rem;
+    background-color: var(--secondary);
+}
+
+.btn:hover {
+    background-color: var(--secondary-light);
+}
+.btn:active,
+.btn:focus {
+    background-color: var(--light);
+    color: var(--primary);
+}
+
+/* ==========================================================
+
+                  GENERAL / TESTING CLASSES
+
+============================================================= */
+
+.desc {
+    padding: 1rem 0;
+}
+.flex {
+    display: flex;
+}
+.justify-c {
+    justify-content: center;
+}
+.align-items-c {
+    align-items: center;
+}
+.text-c {
+    text-align:center;
+}
+.width-sm {
+    width: 50%;
+}
+.width-m {
+    width: 75%;
+}
+.width-l {
+    width: 100%;
+}
+.height-l {
+    height: 100%;
+}
+.margin-a {
+    margin: 0 auto;
+}
+.vertical-m {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.justify-b {
+    justify-content: space-between;
+}
+.row {
+    flex-direction: row;
+}
+.column {
+    flex-direction: column;
+}
+.big {
+    display: inline-block;
+    font-size: 250%;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+/*  ===========================================================
+
+                        NAVIGATION BAR
+
+===============================================================*/
+
+#header {
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--primary);
+
+    /* mobile */
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+}
+/* #header Desktop */
+@media only screen and (min-width: 640px) {
+    #header {
+        padding: 0 2rem;
+        background-image: var(--striped);
+    }
+}
+
+#nav-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+/* #nav-menu Desktop */
+@media only screen and (min-width: 640px){
+    #nav-menu {
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.nav-bar-text {
+    color: white;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.fas {
+    padding: 0.25rem 0.8rem;
+}
+
+#nav-list {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    transition: 0.25s;
+
+    /* Mobile */
+    height: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: right;
+    background-color: var(--primary);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+/* #nav-list Desktop */
+@media only screen and (min-width: 640px) {
+    #nav-list {
+        background-color: transparent;
+        height: auto;
+        position: relative;
+        top: 0;
+        text-align: inherit;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+.list-item {
+    width: 100%;
+}
+/* .list-item Desktop */
+@media only screen and (min-width: 640px) {
+    .list-item {
+        width: auto;
+    }
+}
+
+.nav-anchor {
+    color: white;
+    padding: 0.5rem 1rem;
+
+    /* mobile */
+    display: inline-block;
+    width: 100%;
+}
+/* .nav-anchor Desktop */
+@media only screen and (min-width: 640px) {
+    .nav-anchor {
+        width: auto;
+    }
+}
+.nav-anchor:hover, 
+.nav-anchor:active {
+    color: var(--primary);
+    background-color: var(--tertiary);
+}
+.nav-anchor:focus {
+    background-color: var(--light);
+    color: var(--primary);
+}
+/* .nav-anchor pseudoclasses for Desktop */
+@media only screen and (min-width: 640px) {
+    .nav-anchor:hover, 
+    .nav-anchor:active,
+    .nav-anchor:focus {
+        border-radius: 0.25rem;
+    }
+
+}
+
+/*  ===========================================================
+
+                          HAMBURGER MENU 
+                            
+===============================================================*/
+
+.hamburger {
+    /* mobile */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    color: white;
+    /* border: 1px solid black; */
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.hamburger:hover,
+.hamburger:active,
+.hamburger:focus {
+    color: var(--primary);
+    background-color: var(--light);
+}
+/* Desktop .hamburger */
+@media only screen and (min-width: 640px) {
+    .hamburger {
+        display: none;
+        /* not needed on desktop */
+    }
+}
+
+/*  ===========================================================
+
+                            JUMBOTRON 
+                            
+===============================================================*/
+
+.jumbotron {
+    width: 100%;
+    margin-top:60px;
+    background-image: url('../images/table_restaurant.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Mobile */
+    height: calc(100vh - 60px);
+}
+/* .jumbotron Large Desktop */
+@media only screen and (min-width: 1080px) {
+    .jumbotron {
+        height: 100vh;
+    }
+}
+
+#splash-page {
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 0.5rem 1rem 1rem 1rem;
+    background-color: var(--transp-black);
+    display:flex;
+    flex-direction: column-reverse;
+}
+/* #splash-page Desktop */
+@media only screen and (min-width: 800px){
+    #splash-page {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 8vw;
+        padding-right: 2vw;
+    }
+}
+
+.splash-left {
+    color: white;
+    font-size: calc(2vw + 8px);
+}
+/* .splash-left Desktop */
+@media only screen and (min-width: 800px){
+    .splash-left {
+        font-size: calc(1vw + 6px);
+    }
+}
+.splash-right {
+    color: white;
+    font-size: calc(6vw + 16px);
+    font-family: 'Cardo';
+    /* Creates a text outline */
+    text-shadow: 2px 0 0 var(--primary),
+                 -2px 0 0 var(--primary),
+                 0 2px 0 var(--primary),
+                 0 -2px 0 var(--primary),
+                 1px 1px var(--primary),
+                 -1px -1px 0 var(--primary),
+                 1px -1px 0 var(--primary),
+                 -1px 1px 0 var(--primary);
+}
+
+
+/*  ===========================================================
+
+                          TAB CONTROLS
+
+===============================================================*/
+
+/* main-tabs are the article sections for home/menu/about/etc */
+.main-tab {
+    background-color: white;
+    min-height: calc(100vh - 150px);
+    margin-top: 60px;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-tab-header {
+    font-family: 'Cardo';
+    margin: 1rem 0;
+    font-size: 4vh;
+}
+
+/* javascript related */
+.tab-content {
+    display: none;
+}
+
+/* ==========================================================
+
+                        HOME CONTENT
+
+============================================================= */
+
+.home-image {
+    height: 40vh;
+    width: 100%;
+    /* mobile */
+    margin: 1rem 0;
+    background-image: url('../images/entree.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .home-image Desktop */
+@media only screen and (min-width: 640px){
+    .home-image {
+        margin: 0 1rem;
+    }
+}
+
+.home-section {
+    display: flex;
+
+    /* mobile */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ==========================================================
+
+                       LOCATION CONTENT
+
+============================================================= */
+
+.location-image {
+    height: 40vh;
+    width: 100%;
+    /* mobile */
+    margin: 1rem 0;
+    background-image: url('../images/location.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .home-image Desktop */
+@media only screen and (min-width: 640px){
+    .location-image {
+        margin: 0 1rem;
+    }
+}
+
+.location-section {
+    display: flex;
+
+    /* mobile */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ==========================================================
+
+                       ABOUT US CONTENT
+
+============================================================= */
+
+.about-image {
+    height: 40vh;
+    width: 100%;
+    /* mobile */
+    margin: 1rem 0;
+    background-image: url('../images/sushi_chef.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .home-image Desktop */
+@media only screen and (min-width: 640px){
+    .about-image {
+        margin: 0 1rem;
+    }
+}
+
+.about-section {
+    display: flex;
+
+    /* mobile */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ===========================================================
+     
+                        MENU CONTENT
+
+=============================================================== */
+
+/* Main container for the menu section (but not the entire menu article) */
+#menu-container {
+    border: 1px solid var(--light);
+    border-radius: 0.25rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* #menu-container Extra Small Screens */
+@media only screen and (max-width:500px){
+    #menu-container {
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+    }
+}
+/* #menu-container Desktop */
+@media only screen and (min-width: 640px){
+    #menu-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* menu-nav is the nav to pick menu sections (appetizers/lunch/etc) */
+#menu-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--primary);
+    background-image: var(--striped);
+    justify-content: center;
+}
+/* #menu-nav Desktop */
+@media only screen and (min-width: 640px){
+    #menu-nav {
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-basis: 15%;
+        min-height: 75vh;
+    }
+}
+
+#menu-nav a {
+    min-width: 200px;
+}
+#menu-nav a:hover {
+    background-color: var(--light);
+    color: var(--primary);
+}
+/* #menu-nav a Mobile */
+@media only screen and (max-width: 640px){
+    #menu-nav a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* For the elements in the menu section */
+.sub-menu {
+    padding: 1.2rem .5rem;
+    flex-direction: column;
+}
+/* This is specifically for the anchors in the menu sub-menu */
+a.sub-menu {
+    color: white;
+}
+
+/* Header for the Menu Sections */
+.sub-menu-header {
+    text-align: center;
+    font-family: 'Cardo';
+    font-size: 6vh;
+}
+
+/* Shows up on the default tab of the menu section*/
+#default {
+    flex-direction: column;
+}
+/* Ditto */
+.menu-splash-image {
+    background-image: url('../images/menu.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container for menu item categories */
+#menu-items {
+    flex-basis: 85%;
+}
+
+/* Menu grid items are loaded in via javascript */
+.grid-menu {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grid-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #dddddd;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    /* mobile */
+    margin: 1rem auto;
+    min-width: 300px;
+    min-height: 250px;
+    height: 60vh;
+    width: 80vw;
+}
+/* .grid-menu-item desktop grid */
+@media only screen and (min-width:640px){
+    .grid-menu-item {
+        min-width: 270px;
+        height: 320px;
+        width: 45vw;
+        margin: 1rem;
+    }
+}
+/* .grid-menu-item large desktop grid */
+@media only screen and (min-width:990px){
+    .grid-menu-item {
+        min-width: 320px;
+        width: 20vw;
+    }
+}
+
+.menu-item-img {
+    flex-basis: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.menu-item-img img {
+    height: 100%;
+}
+
+.item-desc, .item-price {
+    padding: 0.5rem 0.45rem;
+    text-align: center;
+}
+
+.item-desc {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-image: repeating-linear-gradient(45deg, transparent,
+        transparent 35px,
+        rgba(255,255,255,.5) 35px,
+        rgba(255,255,255,.5) 70px);
+}
+
+/*  ===========================================================
+
+                     MODAL RELATED CLASSES
+
+===============================================================*/
+
+/* Invisible modal base. Covers the entire screen */
+.modal {
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 0;
+    top: -900px;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.close-modal {
+    background: none;
+    border: none;
+    color: var(--five);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100%;
+    border: 0.2px solid white;
+    padding: 0 !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-modal:hover,
+.close-modal:active {
+    color: var(--accent);
+}
+
+/* Absolute position for close-modal button used on the menu/cart modal */
+.abs {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 22px;
+    width: 22px;
+    font-size: 120%;
+    border: 2px solid white;
+}
+
+/* Modal's body */
+.modal-container {
+    min-width: 360px;
+    width: 25vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+/* Shadow for the modal */
+.modal-container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+	left: 0;
+    z-index: -1;
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--transp-black);
+}
+
+/* Menu modal's body (slightly taller than the original) */
+.menu-m {
+    border: 0;
+    width: 45vw;
+    height: 70vh;
+}
+
+/* Sections for the menu modal */
+.modal-menu-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #dddddd;
+    border-radius: 0.25rem;
+    /* overflow: hidden; */
+
+    /* mobile */
+    height: 100%;
+    width: 100%;
+}
+
+/* Display image for menu items */
+.modal-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    
+    /* mobile */
+    flex-basis: 100%;
+}
+
+/* Menu item description for menu modal */
+.menu-modal-desc {
+    padding: 0.5rem 1rem;
+}
+
+.modal-title {
+    font-family: 'Cardo';
+    font-size: 200%;
+}
+
+.grand-total {
+    font-family: 'Cardo';
+    font-size: 170%;
+}
+
+.price {
+    font-size: 90%;
+    color: var(--secondary-light);
+}
+
+.add-to-cart {
+    float: right;
+}
+
+/* Top of the modal on the alcohol checker */
+.modal-top {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 10px;
+    background-color: var(--primary);
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+/* ===========================================================
+
+                    CART REALTED CLASSES
+
+============================================================== */
+
+/* cart modal */
+.modal-c {
+    border: 0;
+    min-width: 45vw;
+    padding: 1rem 2rem;
+}
+@media only screen and (max-width:640px){
+    .modal-c {
+        min-width: 360px;
+        width: 95%;
+        padding: 1rem;
+    }
+}
+/* cart modal's shadow */
+.modal-c:after {
+    content: "";
+    position: absolute;
+    top: 0;
+	left: 0;
+    z-index: -1;
+    
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--transp-black);
+}
+
+.cart-modal-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #dddddd;
+    border-radius: 0.25rem;
+    padding: 2rem 1rem;
+    position: relative;
+
+    /* mobile */
+    height: 100%;
+}
+
+.cart-modal-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-item {
+    cursor: pointer;
+}
+
+#cart-list{
+    width: 80%;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.cart-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.cart-list-item:nth-of-type(odd) {
+    background: white;
+}
+
+.cart-list-item:nth-of-type(even) {
+    background: #eee;
+}
+
+/* not part of cart modal */
+#cart-button {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: calc(100vh - 138px);
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-color: var(--accent);
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.15s ease-in-out;
+}
+
+#cart-button:hover {
+    background-color: var(--five);
+}
+
+/*  ===========================================================
+
+                            FOOTER
+
+===============================================================*/
+
+#footer {
+    width: 100%;
+    position: sticky;
+    top: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #333;
+    background-image: var(--striped);
+    /* mobile  */
+    padding: 0.5rem 1rem;
+}
+/* #footer Desktop */
+@media only screen and (min-width:640px) {
+    #footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/* #footer Large Desktop */
+@media only screen and (min-width:1000px) {
+    #footer {
+        padding: 0.5rem 10rem;
+    }
+}
+
+.contact-foot {
+    display: none;
+    flex-direction: column;
+}
+/* .contact-foot Desktop */
+@media only screen and (min-width:640px) {
+    .contact-foot{
+        display: flex;
+    }
+}
+.hours-list {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.hours {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  ===========================================================
+
+                            TOOLTIPS
+
+===============================================================*/
+
+.tt {
+    position: relative;
+    display: inline-block;
+}
+
+/* Add to cart tooltip */
+.tt .txt {
+    font-family: 'Roboto';
+    font-size: 11pt;
+    font-weight: 200;
+    opacity: 0;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0.25rem;
+   
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -50px;
+
+    transition: opacity 0.15s ease-in-out;
+}
+
+/* Cart button tooltip */
+.tt .crt {
+    font-family: 'Roboto';
+    font-size: 11pt;
+    font-weight: 200;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 0.25rem;
+   
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    bottom: 25%;
+    left: 160%;
+    margin-left: -25px;
+
+    transition: opacity 0.15s ease-in-out;
+}
+  
+.tt:hover .txt,
+.tt:hover .crt {
+    opacity: 1;
+}
+
+
+.tt .txt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+  .tt .crt::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 100%;
+    margin-left: -2px;
+    border: 5px solid;
+    border-color: transparent black transparent transparent;
+}
+
+/*  ===========================================================
+
+                  JAVASCRIPT RELATED CLASSES
+
+===============================================================*/
+
+.show {
+    display: flex !important;
+    opacity: 1 !important;
+}
+
+.show-modal {
+    opacity: 1 !important;
+    height: 100vh !important;
+    top: 0 !important;
+    z-index: 3;
+}
+
+.show-nav  {
+    height: 140px !important;
+    transition: 0.25s ease-in-out !important;
+}
+
+/* Locking the scroll when a modal is active */
+.lock {
+    overflow: hidden !important;
+}

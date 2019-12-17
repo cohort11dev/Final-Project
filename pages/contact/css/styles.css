@@ -1,0 +1,40 @@
+/*
+color: #111226
+color: #989AA6
+color: #F2CA99
+color: #F25430
+color: #BF5349
+
+font-family: 'Libre Baskerville', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+form {
+    background-color: #111226;
+    border-width: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #F2CA99;
+}
+
+#first-name, #last-name, #email {
+    border-color: #F25430;
+    border-width: 2px;
+}
+
+#comments {
+    border-color: #F25430;
+}
+
+#submit-email {
+    background-color: #F25430;
+    color: #F2CA99
+}
+
+#submit-email:hover {
+    background-color: #BF5349;
+}

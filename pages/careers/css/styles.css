@@ -1,0 +1,21 @@
+.port-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.demo-modal,
+.demo-img {
+    cursor: pointer;
+}
+
+.demo-modal a,
+.demo-code a {
+    text-decoration: none;
+    color: var(--text-muted);
+}
+
+.c-nav-bg {
+    background-color: #0e131c;
+}
+

@@ -1,0 +1,38 @@
+.card-img-top {
+    height: 25vw;
+    object-fit: cover;
+    border-radius: calc(.25rem - 1px);
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    height: 25vw;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: calc(.25rem - 1px);
+}
+
+.card:hover .card-img-overlay,
+.card:active .card-img-overlay {
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    font-size: 1.4rem;
+    opacity: 1;
+}
+
+.card-body .card-title, .card-body .card-text{
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .card-img-top {
+        height: 35vw;
+    }
+    .card:hover .card-img-overlay {
+        opacity: 0;
+    }
+}

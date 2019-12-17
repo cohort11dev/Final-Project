@@ -1,0 +1,54 @@
+.port-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.demo-modal,
+.demo-img {
+    cursor: pointer;
+}
+
+.demo-modal a,
+.demo-code a {
+    text-decoration: none;
+    color: var(--text-muted);
+}
+
+.c-nav-bg {
+    background-color: #0e131c;
+}
+
+
+/* iframe */
+
+.c-frame {
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+.m-box {
+    margin: 0 auto;
+    height: 93vh;
+}
+
+.modal-xl {
+    max-width: 90vw !important;
+}
+
+.modal {
+	width: 102% !important;
+}
+
+.modal-body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.modal-header {
+	padding:0.25rem 1rem;
+}

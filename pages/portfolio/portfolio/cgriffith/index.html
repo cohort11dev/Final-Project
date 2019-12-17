@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600|Literata:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>     
+        <div class="wrapper">
+            <!-- ========= Navigation ========= -->
+            <nav>
+                <h3 id="name">Fiddle & Pipes</h3>
+                <ul id="main-menu">
+                    <li class="menu-item"><a href="#food" class="menu-link">Food</a></li>
+                    <li class="menu-item"><a href="#drinks" class="menu-link" id="drinks-link">Drinks</a></li>
+                    <li class="menu-item"><a href="#music" class="menu-link">Music</a></li>
+                    <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+                </ul>
+                <a href="#" id="navToggle" class="hidden">
+                    <i class="fa fas fa-bars fa-lg"></i>              
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="homeImage"></section>
+        <span id="backToTop" class="hidden">
+            <i class="fa fas fa-angle-double-up fa-5x"></i>              
+        </span>
+        <!-- ========= Food Menu ========= -->
+        <section id="food">
+            <div class="wrapper">
+                <h2>FOOD</h2>
+                <h3>Starters</h3>
+                <ul id="starters" class="food-list"></ul>
+                <h3>Main Courses</h3>
+                <ul id="mainCourses" class="food-list"></ul>
+                <h3>Sides</h3>
+                <ul id="sides"class="food-list"></ul>
+                <h3>Desserts</h3>
+                <ul id="desserts" class="food-list"></ul>
+            </div>
+        </section>
+        <!-- ========= Drinks Menu ========= -->
+        <section id="drinks">
+            <button id="seeDrinksBtn">See Drink Menu</button>
+
+            <div class="wrapper adult hidden">
+                <h2>DRINKS</h2>
+                <h3>Drafts</h3>
+                <ul id="drafts" class="drinks-list"></ul>
+                <h3>Wine</h3>
+                <ul id="wine" class="drinks-list"></ul>
+            </div>
+            <div class="wrapper non-alc hidden">
+                <h2>DRINKS</h2>
+                <h3>Coffee</h3>
+                <ul id="coffee" class="drinks-list"></ul>
+                <h3>Tea</h3>
+                <ul id="tea" class="drinks-list"></ul>
+            </div>
+        </section>
+        <!-- ========= Age Modal ========= -->
+        <div class="wrapper hidden" id="ageModal">            
+            <form action="" method="get" id="ageForm">
+                <input type="text" id="age" name="age" placeholder="Please enter your age">
+                <input type="button" value="Submit" id="ageSubmit">
+            </form>
+        </div>
+        <!-- ========= Music ========= -->
+        <section id="music">
+            <h2>Featured Artists</h2>
+            <div id="artists-container">
+                <div class="artist-card">
+                    <img src="./images/artist_owen.jpg" alt="Owen Hughes" class="artist-img">
+                    <h4 class="artist-name">Owen Hughes</h4>
+                </div>
+                <div class="artist-card">
+                    <img src="./images/artist_boys.jpg" alt="The Boys of Ballybay" class="artist-img">
+                    <h4 class="artist-name">The Boys of Ballybay</h4>
+                </div>
+                <div class="artist-card">
+                    <img src="./images/artist_tim_and_rose.jpg" alt="Timothy and Rose" class="artist-img">
+                    <h4 class="artist-name">Timothy and Rose</h4>
+                </div>
+            </div>
+        </section>
+        <!-- ========= About ========= -->
+        <section id="about">
+            <div class="wrapper">
+                <img src="./images/about.jpg" alt="restaurant-outside" id="about-image">
+                <div id="about-text">
+                    <p>Fiddle & Pipes was founded by musician Michael Sean O'Barrett, who traveled Ireland with his fiddle collecting the best local recipes. O'Barrett, who learned to cook from his grandmother, envisioned a pub where beer, music, and conversation flowed.</p>
+                    <p>He immigrated to the United States in 1897, and made his way to Madison, Wisconsin, where he was reminded of the loughs of home. He decided to settle down, and open his dream pub. </p>
+                    <p>Today, Fiddle & Pipes offers live music and O'Barrett's original recipes seven days a week. We hope you'll join us for a pint.</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div id="contact">
+                <h5>Contact Us</h5>
+                <p>Madison, WI 53703</p>
+                <p>(608) 301-5417‬</p>
+            </div>
+            <div id="hours">
+                <h5>Hours</h5>
+                <p>Sunday - Wednesday: 11am - 10pm</p>
+                <p>Thursday - Saturday: 11am - 12am</p>
+            </div>
+            <div id="socialMedia">
+                <a href="http://www.facebook.com" target="_blank">
+                    <i class="fa fab fa-facebook-f fa-2x"></i>
+                </a>
+                <a href="http://www.instagram.com" target="_blank">
+                    <i class="fa fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="http://www.twitter.com" target="_blank">
+                    <i class="fa fab fa-twitter fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/menuItems.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

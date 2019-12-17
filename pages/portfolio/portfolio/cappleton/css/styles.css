@@ -1,0 +1,594 @@
+body {
+    margin: 0 auto;
+    width: 65%;
+    background-image: url(../img/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Background image colors */
+/* Color Theme Swatches in Hex */
+.rachel-park-hrlvr2ZlUNk-unsplash-1-hex { color: #F29F05; }
+.rachel-park-hrlvr2ZlUNk-unsplash-2-hex { color: #F2B56B; }
+.rachel-park-hrlvr2ZlUNk-unsplash-3-hex { color: #F25C05; }
+.rachel-park-hrlvr2ZlUNk-unsplash-4-hex { color: #F2DBCE; }
+.rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #730202; }
+.rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #FEA888; }
+.rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #F99729; }
+.rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #678FB3; }
+.rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #FFD38C; }
+.rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #D0C4BE; }
+
+/* Fonts */
+/* font-family: 'Handlee', cursive;
+font-family: 'Marck Script', cursive;
+font-family: 'Merienda', cursive;
+font-family: 'Bad Script', cursive; */
+
+/*-------------DESKTOP/LAPTOPS-------------*/
+@media (min-width: 1224px) {
+/* ---------------------NAV BAR-------------------- */
+
+#nav-bar {
+    background-color: #678FB3;
+    font-family: 'Merienda', cursive;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 65%;
+}
+
+#spacer-div {
+    height: 84px;
+}
+
+#nav-title {
+    font-size: 30px;
+    /* font-family: 'Handlee', cursive; */
+    /* font-family: 'Marck Script', cursive; */
+    font-family: 'Merienda', cursive;
+    /* font-family: 'Bad Script', cursive; */
+}
+
+#ul-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list {
+    padding: 10px;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: #FEA888;
+}
+
+a:visited {
+    color: #D0C4BE;
+}
+
+/* ---------------------MAIN CONTENT-------------------- */
+
+#main-content{
+    background-color: #FEA888;
+    
+    padding: 0px 10px 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#about {
+    /* background-color: #F2DBCE; */
+}
+
+.about-title{
+    font-size: 2rem;
+    /* font-family: 'Handlee', cursive;  */
+    /* font-family: 'Marck Script', cursive; */
+    font-family: 'Merienda', cursive;
+    margin: 0;
+}
+
+.about-p {
+    font-family: 'Handlee', cursive; 
+    /* font-family: 'Marck Script', cursive; */
+    /* font-family: 'Merienda', cursive; */
+}
+.main-title {
+    height: 500px;
+    text-align: center;
+}
+
+.main-title-h1 {
+    font-family: 'Merienda', cursive;
+    /* z-index: 1; */
+}
+
+.about-img {
+    width: 500px;
+    height: 300px;
+}
+
+.main-title-p {
+    /* font-family: 'Handlee', cursive;  */
+    font-family: 'Marck Script', cursive;
+    /* font-family: 'Merienda', cursive; */
+    font-size: 1.4rem;
+    /* z-index: 1; */
+}
+
+.movement-div { 
+    background-color: hsla(20, 16%, 78%, 0.75);
+    border-radius: 50%;
+    position: absolute;
+    padding: 20px;
+    right: 550px;
+    top: 270px;
+}
+
+.img-slide {
+    height: 100%;
+    width: 100%;
+}
+
+.about-img {
+    float: right;
+    margin: 0px 0px 0px 10px; 
+}
+
+.menu-article-1, .sides-article-1 {
+    position: relative;
+    right: 45px;
+}
+
+/* ---------------Main Menu--------------- */
+
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-article-1{
+    width: 50%;
+}
+
+.menu-article-2 {
+    width: 50%;
+}
+
+.menu-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-title {
+    font-family: 'Merienda', cursive;
+}
+
+/* USE THIS TO CHANGE FONT AND COLOR */
+.menu-item, .menu-price-1, .menu-price-2, .menu-price-1-4 {
+    list-style: none;
+    font-family: 'Merienda', cursive;
+    font-size: 1.15rem;
+}
+
+.menu-price-1 {
+    margin-bottom: 68px;
+}
+
+.menu-price-1-4 {
+    position: relative;
+    bottom: 18px;
+}
+
+.menu-price-2 {
+    margin-bottom: 68px;
+}
+
+.ul-menu-1, .ul-menu-2, .ul-menu-3, .ul-menu-4 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/* ---------------Sides--------------- */
+
+#sides {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-title {
+    font-family: 'Merienda', cursive;
+}
+
+.sides-article-1{
+    width: 50%;
+}
+
+.sides-article-2 {
+    width: 50%;
+}
+
+.sides-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sides-item, .sides-price, .sides-price-4 {
+    list-style: none;
+    font-family: 'Merienda', cursive;
+    font-size: 1.15rem;
+}
+
+.sides-price {
+    margin-bottom: 50px;
+}
+
+.sides-price-4 {
+    position: relative;
+    top: 22px;
+}
+
+.discription-p {
+    position: relative;
+    bottom: 15px;
+}
+
+/* ---------------Drinks & Surprise--------------- */
+
+#Buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#drinks, #surprise {
+    font-family: 'Handlee', cursive;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #F29F05;
+}
+
+#drinks-display { /* use this to change any background features */
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.drinks-display-1 { /* use this to make any style changes to the overall display of the drink popup */
+    background-color: #F29F05;
+    border: solid black;
+    border-radius: 50%;
+    font-family: 'Merienda', cursive;
+    font-size: 1.15rem;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.drinks-flexbox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ul-drinks {
+    list-style: none;
+    padding: 0 0 10px 0;
+}
+
+.drinks-title {
+    text-align: center;
+}
+
+.drinks-item, .drinks-price {
+    margin-bottom: 30px;
+}
+}
+
+
+/*-------------CELL PHONES-------------*/
+@media (max-width: 481px) {
+    body {
+        margin: 0 auto;
+        width: 90%;
+        background-image: url(../img/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
+        background-size: cover;
+        background-repeat: no-repeat; 
+    }
+/*     
+    /* Background image colors */
+    /* Color Theme Swatches in Hex */
+    .rachel-park-hrlvr2ZlUNk-unsplash-1-hex { color: #F29F05; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-2-hex { color: #F2B56B; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-3-hex { color: #F25C05; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-4-hex { color: #F2DBCE; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #730202; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #FEA888; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #F99729; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #678FB3; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #FFD38C; }
+    .rachel-park-hrlvr2ZlUNk-unsplash-5-hex { color: #D0C4BE; }
+    
+    /* Fonts */
+    /* font-family: 'Handlee', cursive;
+    font-family: 'Marck Script', cursive;
+    font-family: 'Merienda', cursive;
+    font-family: 'Bad Script', cursive; */
+    
+    
+    
+    /* ---------------------NAV BAR-------------------- */
+    
+    #nav-bar {
+        background-color: #678FB3;
+        font-family: 'Merienda', cursive;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        width: 90%;
+    }
+    
+    #spacer-div {
+        height: 63px;
+    }
+    
+    #nav-title {
+        font-size: .8rem;
+        /* font-family: 'Handlee', cursive; */
+        /* font-family: 'Marck Script', cursive; */
+        font-family: 'Merienda', cursive;
+        /* font-family: 'Bad Script', cursive; */
+    }
+    
+    #ul-nav {
+        display: flex;
+        list-style: none;
+        position: relative;
+        right: 40px;
+        top: 10px;
+    }
+    
+    .nav-list {
+        padding: 3px;
+        font-size: .7rem;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    /* ---------------------MAIN CONTENT-------------------- */
+    
+    #main-content{
+        background-color: #FEA888;
+        padding: 0px 10px 0px;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+
+    .main-title {
+        /* display: none; */
+        height: 250px;
+        text-align: center;
+    }
+
+    /* -------MOVES THE H1 AND PARAGRAPH BELOW-------*/
+    .movement-div { 
+        background-color: hsla(20, 16%, 78%, 0.75);
+        border-radius: 50%;
+        position: absolute;
+        padding: 20px;
+        right: 40px;
+        top: 130px;
+        width: 200px;
+        height: 100px;
+    }
+    
+    .main-title-h1 {
+        font-family: 'Merienda', cursive;
+        font-size: .9em;
+        /* z-index: 1; */
+    }
+
+    .main-title-p {
+        /* font-family: 'Handlee', cursive;  */
+        font-family: 'Marck Script', cursive;
+        /* font-family: 'Merienda', cursive; */
+        font-size: .7rem;
+        /* z-index: 1; */
+    }
+    
+    .about-title{
+        font-size: 1.7rem;
+        /* font-family: 'Handlee', cursive;  */
+        /* font-family: 'Marck Script', cursive; */
+        font-family: 'Merienda', cursive;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .about-p {
+        font-family: 'Handlee', cursive; 
+        /* font-family: 'Marck Script', cursive; */
+        /* font-family: 'Merienda', cursive; */
+    }
+
+    .about-img {
+        float: right;
+        margin: 0px 0px 0px 10px;
+        width: 150px;
+        height: 100px;
+    }
+    
+    
+    .img-slide {
+        height: 100%;
+        width: 100%;
+    }
+    
+    
+    
+    /* ---------------Main Menu--------------- */
+    
+    #menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*-------THIS MENU-DIV CHANGES BOTH SIDES OF MENU-------*/
+    #menu-title {
+        font-family: 'Merienda', cursive;
+    }
+
+    .menu-div {
+        display: flex;
+    }
+    
+    /* USE THIS TO CHANGE FONT AND COLOR */
+    .menu-item, .menu-price-1, .menu-price-2, .menu-price-1-4 {
+        list-style: none;
+        font-family: 'Merienda', cursive;
+        font-size: 0.9rem;
+    }
+
+    .ul-menu-1, .ul-menu-2, .ul-menu-3, .ul-menu-4 {
+        padding: 0px;
+    }
+    
+    .menu-price-1 {
+        margin-bottom: 55px;
+    }
+    
+    .menu-price-1-4 {
+        position: relative;
+        bottom: 2px;
+    }
+    
+    .menu-price-2 {
+        margin-bottom: 54px;
+    }
+    
+    /* ---------------Sides--------------- */
+    
+    #sides {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .side-title {
+        font-family: 'Merienda', cursive;
+    }
+    
+    .sides-div {
+        display: flex;
+    }
+
+    .ul-sides-1, .ul-sides-2, .ul-sides-3, .ul-sides-4 {
+        padding: 0;
+    }
+
+    
+    
+    .sides-item, .sides-price, .sides-price-4 {
+        list-style: none;
+        font-family: 'Merienda', cursive;
+        font-size: 0.9rem;
+    }
+    
+    .sides-price {
+        margin-bottom: 39px;
+    }
+    
+    .sides-price-4 {
+        position: relative;
+        top: 15px;
+    }
+    
+    /*-------THIS CONTROLLS ALL OF THE DISCRIPTION PARAGRAPHS-------*/
+    .discription-p {
+        font-size: 0.75rem;
+        position: relative;
+        bottom: 10px;
+    }
+    
+    /* ---------------Drinks & Surprise--------------- */
+    
+    #Buttons {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #drinks, #surprise {
+        font-family: 'Handlee', cursive;
+        font-size: 2rem;
+        padding: 10px;
+        background-color: #F29F05;
+    }
+    
+    #drinks-display { /* use this to change any background features */
+        display: none;
+        position: fixed; 
+        z-index: 1; 
+        padding-top: 100px; 
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+    }
+    
+    .drinks-display-1 { /* use this to make any style changes to the overall display of the drink popup */
+        background-color: #F29F05;
+        border: solid black;
+        border-radius: 3%;
+        font-family: 'Merienda', cursive;
+        font-size: 0.9rem;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    .drinks-flexbox {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .ul-drinks {
+        list-style: none;
+        padding: 0 0 10px 0;
+    }
+    
+    .drinks-title {
+        text-align: center;
+    }
+    
+    .drinks-item, .drinks-price {
+        margin-bottom: 30px;
+    } 
+}

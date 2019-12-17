@@ -1,0 +1,139 @@
+<!-- ============================================================================================
+This website is for a fictional restaurant.  It has a header with a title, menu, and cart button.
+It also has a footer with links to social media.
+
+It has 4 sections accessible by the header menu: About, Appetizers, Lunch, and Drinks.  Menu items
+are loaded dynamically from the app.js file.  Each menu item has an "order now" button.  When clicked,
+the item is added to the cart, the price is added to the cart total (including tax), and the 
+button is disabled.
+
+When the cart button is hit, it displays a list of all of the menu items ordered in a lightbox,
+including tax and total.
+
+It also had an input for an age.  If over 21, it will display alcoholic drinks in the drink menu.
+================================================================================================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Social media images CSS library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <title>Restaurant Landing Page</title>
+</head>
+
+<body>
+    <!-- ===============================
+            NAVIGATION
+    ================================= -->
+    <nav id="navbar">
+        <div class="wrapper">
+            <section class="row">
+                <img id="logo" src="./images/logo.jpeg" alt="Steve's Bar and Grill">
+                <ul id="primary-menu" class="primary-menu">
+                    <li class="menu-icon" aria-label="Responsive Menu"><a href="#" class="icon">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+                    <li class="menu-item"><a class="menu-link" href="#home">About</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#appetizers">Appetizers</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#lunch">Lunch</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#drinks">Drinks</a></li>
+                </ul>
+                <a id="btn-cart" href="##">
+                    <div class="fa fa-shopping-cart"></div>Cart <span id="cart-total"></span>
+                </a>
+            </section>
+            <section class="row age-row">
+                <label for="ageInput">What is your age?</label>
+                <input type="number" id="ageInput">
+                <button type="submit" id=btn-submit>Submit</button>
+            </section>
+        </div>
+    </nav>
+
+    <div id="home">
+    </div>
+
+    <div class="spacer">
+    </div>
+
+    <!-- ===============================
+            HEADER - ABOUT INFO
+    ================================= -->
+    <header id="header">
+        <div class="header-info">
+            <h2>About</h2>
+        </div>
+        <div class="header-text">
+            <p>Welcome to Steve's Bar and Grill, where the beer is cold and the friends are free! Enjoy our great food and our award winning bloody mary!</p>
+        </div>
+    </header>
+
+    <!-- ===============================
+            MAIN CONTENT
+    ================================= -->
+    <main id="main-content">
+
+        <!-- ===============================
+            APPETIZERS SECTION
+        ================================= -->
+        <div class="section-header" id="appetizers">
+            <h2>Appetizers</h2>
+        </div>
+        <section class="section app-section">
+
+        </section>
+
+        <!-- ===============================
+            lUNCH SECTION
+        ================================= -->
+        <div class="section-header" id="lunch">
+            <h2>Lunch</h2>
+        </div>
+        <section class="section lunch-section">
+
+        </section>
+
+        <!-- ===============================
+            DRINKS SECTION
+        ================================= -->
+        <div class="section-header" id="drinks">
+            <h2>Drinks</h2>
+        </div>
+        <section class="section drink-section">
+
+        </section>
+    </main>
+
+    <div class="spacer"></div>
+
+    <!-- The Modal/Lightbox for cart button -->
+    <div id="cart-modal" class="cart-modal">
+        <span aria-label="Close Cart" id="close-cart" class="cursor">&times;</span>
+        <div id="cart-content">
+            <h2 id="cart-title">Items in the cart</h2>
+            <table id="cart-table">
+
+            </table>
+        </div>
+    </div>
+
+    <!-- ===============================
+            FOOTER
+        ================================= -->
+    <footer>
+        <a class="fa fa-social fa-facebook-square" href="##"></a>
+        <a class="fa fa-social fa-twitter-square" href="##"></a>
+        <a class="fa fa-social fa-envelope-square" href="##"></a>
+        <div id="address">1234 Maple Street, Madison, WI 53719</div>
+        <div id="phone">(608) 555-5555</div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

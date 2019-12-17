@@ -1,0 +1,40 @@
+.card {
+    box-shadow:  0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d4;
+    margin: 5% 0;
+    overflow: hidden;
+}
+
+.cardSmallImg {
+    display: none;
+}
+
+.modal-content img {
+    height: auto;
+    width: 100%;
+}
+
+h3.card-title{
+    margin-bottom: 0;
+}
+
+.blog-date {
+    margin-bottom: 1rem;
+}
+
+.blog-post p {
+    margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 770px) {
+    
+    .cardSmallImg {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    
+    .blogCardImg {
+        display: none;
+    }
+    
+}
