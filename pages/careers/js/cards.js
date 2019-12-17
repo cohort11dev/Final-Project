@@ -12,7 +12,7 @@ export const card = [
 
     {
     title: `Junior Web Developer`,
-    description: `As a Junior Web Developer you will spend a significant portion of your time coding and documenting.`,
+    description: `As a Junior Web Developer you will spend a significant portion of your time coding and documenting in a team lead by a Senior Developer.`,
     },
 
     {
@@ -44,7 +44,7 @@ export const card = [
     title: `Social Media Coordinator`,
     description: `Social Media Coordinator is responsible for planning, implementing and monitoring a company's Social Media strategy in order to increase brand awareness, improve Marketing efforts and increase sales.`,
     },
-    
+
     {
     title: `Creative Content Director`,
     description: `This role will direct the Creative Content Team creative content execution across multiple lines of business and departments; including but not limited to theatrical marketing EPK and publicity content, digital/social content, specialty broadcast content.`,
