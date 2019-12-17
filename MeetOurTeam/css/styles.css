@@ -8,6 +8,9 @@
     display: none;
     height: 25vw;
 }
+.card-img-overlay .card-text {
+    padding: 7.5px;
+}
 .card:hover .card-img-overlay {
     background: rgba(255, 255, 255, 0.45);
     font-size: 1.4rem;
