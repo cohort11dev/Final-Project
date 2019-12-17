@@ -6,9 +6,13 @@
 :root {
 	--dark-blue: #111226;
 	--slate-blue: #393b46;
+	--light-slate-blue: #aeb0bd;
+	--grey-blue: #c5c7cf;
 	--faded-yellow: #f2CA99;
 	--cohort-orange: #F25430;
 	--burnt-orange: #BF5349;
+	--light-grey: #e9ecef;
+	--light-grey-alt: #dfe2e6;
 	/* use the RGB values like this:
 	   color: rgba(var(--dark-blue-rgb), 0.5) */
 	--dark-blue-rgb: 17,18,38;
