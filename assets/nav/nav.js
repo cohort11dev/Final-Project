@@ -23,7 +23,7 @@ export const nav = function () {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? 'active' : ''}">
-                    <a class="nav-link" href="${index ? '#to-top' : 'https://cohort11dev.github.io/Final-Project/'}">Home</a>
+                    <a class="nav-link" href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? '#to-top' : 'https://cohort11dev.github.io/Final-Project/'}">Home</a>
                 </li>
                 <li class="nav-item">
 
@@ -33,23 +33,23 @@ export const nav = function () {
                         </a>
                     
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="${index ? '#about' : './about.html'}">About Cohort 11</a>
-                        <a class="dropdown-item" href="${index ? './pages/ourteam.html' : './ourteam.html'}">Meet the Team</a>
+                        <a class="dropdown-item" href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? '#about' : './about.html'}">About Cohort 11</a>
+                        <a class="dropdown-item" href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? './pages/ourteam.html' : './ourteam.html'}">Meet the Team</a>
                         </div>
                     </div>
 
                 </li>
                 <li class="nav-item ${checkActivePage(document.URL.includes('portfolio.html'))}">
-                    <a class="nav-link" href="${index ? '#portfolio' : './portfolio.html'}">Portfolio</a>
+                    <a class="nav-link" href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? '#portfolio' : './portfolio.html'}">Portfolio</a>
                 </li>
                 <li class="nav-item ${checkActivePage(document.URL.includes('blog.html'))}">
-                    <a class="nav-link" href="${index ? '#blog' : './blog.html'}">Blog</a>
+                    <a class="nav-link" href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? '#blog' : './blog.html'}">Blog</a>
                 </li>
                 <li class="nav-item ${checkActivePage(document.URL.includes('contact.html'))}">
-                    <a class="nav-link" href="${index ? './pages/contact.html' : './contact.html'}">Contact</a>
+                    <a class="nav-link" href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? './pages/contact.html' : './contact.html'}">Contact</a>
                 </li>
                 <li class="nav-item ${checkActivePage(document.URL.includes('careers.html'))}">
-                    <a class="nav-link" href="${index ? './pages/careers.html' : './careers.html'}">Careers</a>
+                    <a class="nav-link" href="${document.URL === 'https://cohort11dev.github.io/Final-Project/' ? './pages/careers.html' : './careers.html'}">Careers</a>
                 </li>
             </ul>
         </div>
