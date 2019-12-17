@@ -13,8 +13,12 @@ header {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: #e6e6e6;
+}
+
+#copyright a:hover {
+	color: #FFF;
 }
 
 main#main {
@@ -81,7 +85,7 @@ main#main {
 	font-family: var(--accent-font), cursive, Calibri, sans-serif;
 	text-transform: uppercase;
 	font-size: 40px;
-	letter-spacing: 1.5rem;
+	letter-spacing: 1.2rem;
 }
 
 .splash-logo {
@@ -95,7 +99,7 @@ main#main {
 
 .brand, .topic {
 	letter-spacing: 15px;
-	margin-top: -30px;
+	margin-top: -20px;
 	font-weight: 900;
 	font-size: 35px;
 }
