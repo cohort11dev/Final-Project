@@ -8,7 +8,7 @@ body, h1, h2, p {
 header {
 	height: calc(100vh - 56px);
 	position: relative;
-	background: var(--dark-blue) url("../images/color_shift.jpg") no-repeat center center fixed;
+	background: var(--dark-blue) url("../images/color_shift_dim.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 
