@@ -22,7 +22,6 @@ function modalContent(selector) {
 }
 
 const renderPortfolioCards = (portfolio, i) => {
-    console.log({portfolio}, {i})
     let HTML = `<div class="col-md-6 mb-4">
         <div class="card mb-4 box-shadow h-100">
 
