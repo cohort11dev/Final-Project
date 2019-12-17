@@ -26,7 +26,7 @@ export const teamMembers = [
     {
         name: "Felix Gelly",
         title: "Senior Web Developer",
-        bio: "I own two rabbits. Favourite colour is chartreuse.",
+        bio: "Computers are my passion. My favourite colour is chartreuse.",
         image: "../pages/ourteam/images/Felix.png"
     },
     {
