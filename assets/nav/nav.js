@@ -24,7 +24,7 @@ export const nav = function () {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ${checkActivePage(document.URL.includes('index.html'))}">
-                    <a class="nav-link" href="${index ? '#to-top' : 'https://cohort11dev.github.io/'}">Home</a>
+                    <a class="nav-link" href="${index ? '#to-top' : 'https://cohort11dev.github.io/Final-Project/'}">Home</a>
                 </li>
                 <li class="nav-item">
 
