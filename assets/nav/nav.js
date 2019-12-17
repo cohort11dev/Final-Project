@@ -26,8 +26,19 @@ export const nav = function () {
                 <li class="nav-item ${checkActivePage(document.URL.includes('index.html'))}">
                     <a class="nav-link" href="${index ? '#to-top' : '../../index.html'}">Home</a>
                 </li>
-                <li class="nav-item ${checkActivePage(document.URL.includes('about.html'))}">
-                    <a class="nav-link" href="${index ? '#about' : './about.html'}">About</a>
+                <li class="nav-item">
+
+                    <div class="dropdown">
+                        <a class="btn btn-db dropdown-toggle ${checkActivePage(document.URL.includes('about.html'))} nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                        </a>
+                    
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="${index ? '#about' : './about.html'}">About Cohort 11</a>
+                        <a class="dropdown-item" href="${index ? './pages/ourteam.html' : './ourteam.html'}">Meet the Team</a>
+                        </div>
+                    </div>
+
                 </li>
                 <li class="nav-item ${checkActivePage(document.URL.includes('portfolio.html'))}">
                     <a class="nav-link" href="${index ? '#portfolio' : './portfolio.html'}">Portfolio</a>
@@ -145,4 +156,4 @@ const jumbo = checkPage(document.URL);
     document.querySelector('main').insertAdjacentHTML('afterbegin', jumbo);
 }
 
-if(document.URL.includes('careers')) nav();
+nav();
