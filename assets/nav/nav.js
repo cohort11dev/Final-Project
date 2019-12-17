@@ -29,7 +29,7 @@ export const nav = function () {
                 <a class="nav-link" href="${index ? '#about' : './about.html'}">About</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('portfolio.html'))}">
-                <a class="nav-link" href="${index ? '#portfolio' : './portfolio.html'}">Portfoilo</a>
+                <a class="nav-link" href="${index ? '#portfolio' : './portfolio.html'}">Portfolio</a>
             </li>
             <li class="nav-item ${checkPage(document.URL.includes('blog.html'))}">
                 <a class="nav-link" href="${index ? '#blog' : './blog.html'}">Blog</a>
@@ -58,18 +58,12 @@ export const nav = function () {
         <ul class="address-container">
             <li class="mt-3">
                 <p>
-                    106 st Lexington Ave
+                    2040 South Park Street
                     <br>
-                    Manhattan, NY — 12009
+                    Madison, WI — 53713
                 </p>
             </li>
-            <li class="mt-3">
-                <p>
-                    25 Union Square West
-                    <br>
-                    New York, NY — 10003
-                </p>
-            </li>
+            
         </ul>
     </div>
 
@@ -93,9 +87,9 @@ export const nav = function () {
                     
             <li class="open mt-3">
                 <p>
-                    Available for private consolutations
+                    Available for private consultations
                     <br>
-                    Hackatons on Sundays
+                    Hackathons on Sundays
                 </p>
             </li>
         </ul>
