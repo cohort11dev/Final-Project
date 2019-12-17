@@ -1,3 +1,11 @@
+#valuesList {
+    list-style-type: circle;
+    text-align: left;
+}
+.valuesImg {
+    height: auto;
+    width: 100%;
+}
 @media screen and (max-width: 850px) {
     .row.d-flex {
         flex-direction: column;
