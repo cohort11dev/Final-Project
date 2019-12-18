@@ -1,3 +1,7 @@
+.card {
+    min-width: 220px;
+}
+
 .card-img-top {
     height: 25vw;
     object-fit: cover;
@@ -28,9 +32,10 @@
     margin: 0;
 }
 
+
 @media screen and (max-width: 800px) {
     .card-img-top {
-        height: 35vw;
+        height: 55vw;
     }
     .card:hover .card-img-overlay {
         opacity: 0;
@@ -38,4 +43,9 @@
     .card-title {
 		word-wrap: normal;
 	}
+}
+@media screen and (max-width: 545px) {
+    .card-img-top {
+        height: 65vw;
+    }
 }
