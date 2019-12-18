@@ -262,36 +262,43 @@ main section:nth-of-type(4) {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	.highlight {
-		font-size: 60%;
-		letter-spacing: 0.5rem;
-	}
-	.topic {
-		font-size: 120%;
-		margin-top: 0;
-	}
+
+	
+	
 	.divider {
 		height: 400px;
 	}
 }
 
 @media all and (max-width: 700px) {
+
+	
+
 	#logo {
 		z-index: 5;
 	}
+
 	.splash-logo-small {
 		width: 80vw;
 		display: block;
 	}
+
 	.splash-logo {
 		display: none;
 	}
+
 }
 
 @media all and (max-width: 767px) {
 
 	.highlight {
-		font-size: 80%;
+		font-size: 100%;
+		letter-spacing: 0.5rem;
+	}
+
+	.topic {
+		font-size: 190%;
+		margin-top: 0;
 	}
 
 	section#about, section#portfolio, section#blog {
@@ -320,6 +327,12 @@ main section:nth-of-type(4) {
 }
 
 @media all and (min-width: 768px) and (max-width: 990px) {
+
+	.topic {
+		font-size: 190%;
+		margin-top: 0;
+	}
+
 	.highlight {
 		font-size: 120%;
 	}
