@@ -6,7 +6,14 @@
     height: auto;
     width: 100%;
 }
+.i-history {
+    max-height: 425px;
+}
 @media screen and (max-width: 850px) {
+    .history-img {
+        text-align: center;
+        margin-right: 0;
+    }
     .row.d-flex {
         flex-direction: column;
     }
