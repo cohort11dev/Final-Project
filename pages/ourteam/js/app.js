@@ -3,7 +3,7 @@ import {teamMembers} from './teamMembers.js'
 const renderTeamMember = (person) => {
     let markup;
     markup = `
-        <div class="col-6 col-md-4 py-1 text-center">
+        <div class="col col-md-4 py-1 text-center">
             <div class="card border-0">
                 <img src="${person.image}" class="card-img-top" alt="${person.name}">
                 <div class="card-img-overlay">
