@@ -12,7 +12,7 @@ export const nav = function () {
     }
 
     const navbar = `<div class="container nav-wrap">
-        <a class="navbar-brand" href="#" aria-label="Logo">
+        <a class="navbar-brand" href="https://cohort11dev.github.io/Final-Project/" aria-label="Logo">
             <div id="${index ? 'nav-logo-i' : 'nav-logo'}" alt="Cohort 11 Dev"></div>
         </a>
         <button class="navbar-toggler"
