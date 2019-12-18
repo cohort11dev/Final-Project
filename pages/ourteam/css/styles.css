@@ -35,4 +35,7 @@
     .card:hover .card-img-overlay {
         opacity: 0;
     }
+    .card-title {
+		word-wrap: normal;
+	}
 }
