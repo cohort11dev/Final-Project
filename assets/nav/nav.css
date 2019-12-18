@@ -79,6 +79,10 @@ html {
 	display: flex;
 }
 
+.nav-item .btn {
+	text-align: left !important;
+}
+
 /* FOOTER */
 #copyright a {
 	text-decoration: none !important;
@@ -198,7 +202,7 @@ html {
 .p-topic {
 	color: var(--dark-blue);
 	letter-spacing: 0.3rem;
-	margin-top: -30px;
+	margin-top: -25px;
 	font-weight: 900;
 	font-size: 50px;
 }
@@ -207,7 +211,7 @@ html {
 	color: rgb(var(--slate-blue-rgb));
 	font-family: var(--accent-font), cursive, Calibri, sans-serif;
 	text-transform: lowercase;
-	font-size: 35px;
+	font-size: 30px;
 	letter-spacing: 0.7rem;
 }
 
@@ -233,6 +237,7 @@ html {
 
 /* MEDIA QUERIES */
 @media all and (max-width: 575px) {
+
 	.divider {
 		height: 400px;
 	}
@@ -286,6 +291,17 @@ html {
 
 @media all and (max-width: 767px) {
 
+	.p-highlight {
+		font-size: 140%;
+		letter-spacing: 0.5rem;
+		margin-bottom: 0;
+	}
+
+	.p-topic {
+		font-size: 250%;
+		margin-top: 0;
+	}
+
 	#nav-logo {
 		width: 38px;
 		height: 32px;
@@ -328,6 +344,15 @@ html {
 		padding-left: 2vw;
 	}
 	
+}
+
+@media all and (min-width: 768px) and (max-width: 990px) {
+	.p-highlight {
+		font-size: 120%;
+	}
+	.p-topic {
+		margin-top: -20px;
+	}
 }
 
 @media all and (max-width: 990px) {
