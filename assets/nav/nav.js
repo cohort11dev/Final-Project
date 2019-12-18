@@ -50,11 +50,11 @@ export const nav = function () {
                 <li class="nav-item ${checkActivePage(document.URL.includes('blog.html'))}">
                     <a class="nav-link" href="${index ? '#blog' : './blog.html'}">Blog</a>
                 </li>
-                <li class="nav-item ${checkActivePage(document.URL.includes('contact.html'))}">
-                    <a class="nav-link" href="${index ? './pages/contact.html' : './contact.html'}">Contact</a>
-                </li>
                 <li class="nav-item ${checkActivePage(document.URL.includes('careers.html'))}">
                     <a class="nav-link" href="${index ? './pages/careers.html' : './careers.html'}">Careers</a>
+                </li>
+                <li class="nav-item ${checkActivePage(document.URL.includes('contact.html'))}">
+                    <a class="nav-link" href="${index ? './pages/contact.html' : './contact.html'}">Contact</a>
                 </li>
             </ul>
         </div>
