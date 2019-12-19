@@ -5,11 +5,12 @@ export const nav = function () {
     
     if (document.URL === 'https://cohort11dev.github.io/Final-Project/' || document.URL.includes('index')){
         index = true;
-        if(document.URL.includes('index')) home = '../../index.html'
-        else home = 'https://cohort11dev.github.io/Final-Project/';
     } 
     else index = false;
-    
+
+    if(document.URL.includes('github.io')) home = 'https://cohort11dev.github.io/Final-Project/';
+    else home = '../../index.html';
+
     const checkActivePage = bool => {
         if (bool) return 'active';
         return '';
