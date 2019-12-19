@@ -3,7 +3,7 @@ import { jumbotron } from './jumbotron.js';
 export const nav = function () {
     let index;
     
-    if (document.URL === 'https://cohort11dev.github.io/Final-Project/') index = true;
+    if (document.URL === 'https://cohort11dev.github.io/Final-Project/' || document.URL.includes('index')) index = true;
     else index = false;
     
     const checkActivePage = bool => {
@@ -63,7 +63,7 @@ export const nav = function () {
 const checkPage = function(url) {
     let i = -1;
 
-    if(document.URL === 'https://cohort11dev.github.io/Final-Project/') return '';
+    if(document.URL === 'https://cohort11dev.github.io/Final-Project/' || document.URL.includes('index')) return '';
     else if(url.includes('about')) i = 0;
     else if(url.includes('portfolio')) i = 1;
     else if(url.includes('blog')) i = 2;
