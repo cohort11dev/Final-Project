@@ -5,8 +5,7 @@ export const nav = function () {
     
     if (document.URL === 'https://cohort11dev.github.io/Final-Project/' || document.URL.includes('index')){
         index = true;
-    } 
-    else index = false;
+    } else index = false;
 
     if(document.URL.includes('github.io')) home = 'https://cohort11dev.github.io/Final-Project/';
     else home = '../../index.html';
