@@ -42,8 +42,8 @@ export const portfolioCards = [
     {
         demoImage: `./portfolio/portfolio/cappleton/demo.jpg`,
         name: `Christopher Applton`,
-        title: `Restaurant Demo`,
-        description: `A short description of the website.`,
+        title: `Applesauce's Modest Eatery`,
+        description: `A colorful restaurant website chocked full of enticing images of food.`,
         link: `https://github.com/cohort11dev/Final-Project/tree/demo/pages/portfolio/portfolio/cappleton`,
     },
 ]
