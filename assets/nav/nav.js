@@ -1,9 +1,13 @@
 import { jumbotron } from './jumbotron.js';
 
 export const nav = function () {
-    let index;
+    let index, home;
     
-    if (document.URL === 'https://cohort11dev.github.io/Final-Project/' || document.URL.includes('index')) index = true;
+    if (document.URL === 'https://cohort11dev.github.io/Final-Project/' || document.URL.includes('index')){
+        index = true;
+        if(document.URL.includes('index')) home = '../../index.html'
+        else home = 'https://cohort11dev.github.io/Final-Project/';
+    } 
     else index = false;
     
     const checkActivePage = bool => {
@@ -12,7 +16,7 @@ export const nav = function () {
     }
 
     const navbar = `<div class="container nav-wrap">
-        <a class="navbar-brand" href="https://cohort11dev.github.io/Final-Project/" aria-label="Logo">
+        <a class="navbar-brand" href="${home}" aria-label="Logo">
             <div id="${index ? 'nav-logo-i' : 'nav-logo'}" alt="Cohort 11 Dev"></div>
         </a>
         <button class="navbar-toggler"
@@ -28,7 +32,7 @@ export const nav = function () {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ${index ? 'active' : ''}">
-                    <a class="nav-link" href="${index ? '#to-top' : 'https://cohort11dev.github.io/Final-Project/'}">Home</a>
+                    <a class="nav-link" href="${index ? '#to-top' : home}">Home</a>
                 </li>
                 <li class="nav-item">
 
