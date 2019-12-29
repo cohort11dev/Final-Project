@@ -19,7 +19,7 @@ const renderBlogCard = (blog) => {
                         <p class="card-text blog-date"><small>${blog.date} by <span class="text-muted">${blog.author}</span></small></p>
                         <p class="card-text">${blog.cardPost}</p>
                         <a class="btn btn-outline-primary mt-3" href="#" data-toggle="modal"
-                        data-target="#${removeSpaces(blog.title)}">Continue Reading <i class="fal fa-angle-double-right"></i></a>
+                        data-target="#${removeSpaces(blog.title)}">Continue Reading <i class="fas fa-angle-double-right"></i></a>
                     </div>
                 </div>
             </div>
